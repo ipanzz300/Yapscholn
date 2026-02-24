@@ -1,0 +1,55 @@
+<nav class="flex items-center justify-between px-12 py-4 bg-white shadow-lg sticky top-0 z-[100]">
+    <div class="flex items-center space-x-10">
+        <img src="assets/image 1.png" alt="Logo" class="h-12" />
+        <ul class="flex space-x-5 font-medium">
+            <a href="homepage.html" class="cursor-pointer hover:text-blue-600 transition">Beranda</a>
+            
+            <li class="relative group cursor-pointer flex items-center gap-1">
+                <span>Tentang</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 group-hover:rotate-180 transition-all" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+
+                <div class="absolute top-full left-0 pt-2 w-48 hidden group-hover:block">
+                    <div class="bg-white shadow-xl rounded-lg border border-gray-100 py-2">
+                        <a href="#" class="block px-4 py-2 hover:bg-blue-50 hover:text-blue-600 transition">Tentang Kami</a>
+                        <a href="mainorganisasi.html" class="block px-4 py-2 hover:bg-blue-50 hover:text-blue-600 transition">Struktur Organisasi</a>
+                    </div>
+                </div>
+            </li>
+
+            <li class="cursor-pointer hover:text-blue-600 transition">Kolaborasi</li>
+            <li class="cursor-pointer hover:text-blue-600 transition">Kegiatan</li>
+            <li class="cursor-pointer hover:text-blue-600 transition">Keanggotaan</li>
+            <li class="cursor-pointer hover:text-blue-600 transition">Artikel</li>
+            <li class="cursor-pointer hover:text-blue-600 transition">Forum</li>
+            <li class="cursor-pointer hover:text-blue-600 transition">Anggota</li>
+        </ul>
+    </div>
+
+    <div class="flex items-center space-x-6">
+        <div class="relative group py-2"> <button id="langBtn" class="flex items-center space-x-2 text-gray-700 hover:text-blue-600 transition font-medium focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+                </svg>
+                <span id="currentLang">ID</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 transition-transform group-hover:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+            </button>
+
+            <div id="langMenu" class="absolute right-0 mt-2 w-32 bg-white rounded-2xl shadow-xl border border-gray-100 py-2 hidden group-hover:flex flex-col z-50">
+                <button onclick="changeLang('ID')" class="px-4 py-2 text-left text-sm font-semibold text-blue-600 border-l-4 border-blue-600 bg-blue-50">ID</button>
+                <button onclick="changeLang('ENG')" class="px-4 py-2 text-left text-sm font-medium text-gray-700 hover:bg-gray-50 hover:text-blue-600 transition">ENG</button>
+                <button onclick="changeLang('中文')" class="px-4 py-2 text-left text-sm font-medium text-gray-700 hover:bg-gray-50 hover:text-blue-600 transition">中文 (China)</button>
+            </div>
+        </div>
+
+        <button class="bg-[#2F6FED] font-semibold text-white px-7 py-2 rounded-xl hover:bg-blue-700 transition shadow-sm">
+            Login
+        </button>
+        <button class="border border-blue-400 font-semibold text-[#2F6FED] px-7 py-2 rounded-xl hover:bg-blue-50 transition">
+            Start Now
+        </button>
+    </div>
+</nav>

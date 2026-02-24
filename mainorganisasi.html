@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div id="nav-placeholder" class="sticky top-0 z-50"></div>
+    
+    <div id="footer-placeholder"></div>
+    <!-- COMPONENTS -->
+<script>
+    // Fungsi untuk memanggil komponen
+function loadComponent(id, path) {
+    fetch(path)
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById(id).innerHTML = data;
+        });
+}
+loadComponent('nav-placeholder', 'components/navbar.html');
+loadComponent('footer-placeholder', 'components/footer.html');
+</script>
+<script type="module" src="/main.js"></script>
+</body>
+</html>
