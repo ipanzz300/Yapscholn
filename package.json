@@ -1,0 +1,12 @@
+{
+  "name": "yapscholn-project",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "tailwindcss -i ./src/input.css -o ./css/style.css --watch",
+    "build": "tailwindcss -i ./src/input.css -o ./css/style.css --minify"
+  },
+  "devDependencies": {
+    "tailwindcss": "latest",
+    "@tailwindcss/cli": "latest"
+  }
+}

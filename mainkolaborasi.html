@@ -3,29 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    
+    <title>Kolaborasi - Yapscholn</title>
+
+    <!-- Google Fonts (Poppins) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-    <script src="https://cdn.tailwindcss.com"></script>
-
-    <script>
-        tailwind.config = {
-  theme: {
-    extend: {
-      fontFamily: {
-        // Ganti Inter jadi Poppins
-        sans: ['Poppins', 'sans-serif'],
-        poppins: ['Poppins', 'sans-serif'],
-      },
-    },
-  },
-}
-    </script>
+    <!-- Tailwind CSS (Generated via CLI) -->
+    <link href="css/style.css" rel="stylesheet">
 </head>
-<body class="font-poppins">
+<body>
     <div id="nav-placeholder" class="sticky top-0 z-50"></div>
     <section class="pt-10 pb-20 bg-gray-50">
     <div class="max-w-[1196px] mx-auto px-4 lg:px-[122px]">
@@ -154,9 +142,12 @@
                     Ruang komunikasi terbuka untuk berbagi ide, berdiskusi, dan menemukan partner kolaborasi.
                 </p>
 
-                <a href="#" class="inline-block w-full sm:w-auto text-center bg-gradient-to-r from-[#4475E1] to-[#E5C100] text-white font-inter font-semibold py-4 px-10 rounded-xl shadow-md hover:shadow-lg transition-all active:scale-95 text-[15px]">
-                    Mulai Diskusi
+                <a href="#" class=" relative inline-block w-full sm:w-auto text-center bg-blue-700 text-white font-inter font-semibold  py-4 px-10 rounded-xl shadow-md text-[15px] overflow-hidden group transition-all duration-500">
+                    <span class="absolute inset-0 bg-gradient-to-r from-[#4475E1] to-[#E5C100] 
+                 transition-opacity duration-700 ease-in-out group-hover:opacity-0"></span>
+                 <span class="relative z-10">Mulai Diskusi</span>
                 </a>
+                
             </div>
 
         </div>
