@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+  theme: {
+    extend: {
+      fontFamily: {
+        // Ganti Inter jadi Poppins
+        sans: ['Poppins', 'sans-serif'],
+        poppins: ['Poppins', 'sans-serif'],
+      },
+    },
+  },
+}
+    </script>
+</head>
+<body class="font-poppins">
+    <div id="nav-placeholder" class="sticky top-0 z-50"></div>
+    <section class="pt-10 pb-20 bg-gray-50">
+    <div class="max-w-[1196px] mx-auto px-4 lg:px-[122px]">
+        
+        <div class="text-center mb-16">
+            <h1 class="text-[#FBBF24] text-3xl md:text-4xl font-bold mb-4">Ajukan Kolaborasi</h1>
+            <p class="max-w-2xl mx-auto text-[15px] leading-relaxed">
+                Kami membuka peluang kerja sama di bidang pendidikan untuk menciptakan pengalaman belajar yang bermakna dan berdampak.
+            </p>
+        </div>
+
+        <div class="bg-white rounded-3xl shadow-2xl overflow-hidden flex flex-col lg:flex-row min-h-[664px]">
+            
+            <div class="w-full lg:w-[40%] bg-[#043873] p-10 md:p-14 text-white relative flex flex-col justify-between">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4">Informasi Kontak</h3>
+                    <p class="text-blue-100/70 text-sm mb-12">
+                        Ingin bertanya terlebih dahulu? Silahkan hubungi kontak kami
+                    </p>
+
+                    <div class="space-y-10 relative z-10">
+                        <div class="flex items-center gap-5">
+                            <i class="fa-solid fa-phone-volume text-xl text-white"></i>
+                            <span class="text-sm">Nomor telepon perusahaan</span>
+                        </div>
+                        <div class="flex items-center gap-5">
+                            <i class="fa-solid fa-envelope text-xl text-white"></i>
+                            <span class="text-sm">Email Perusahaan</span>
+                        </div>
+                        <div class="flex items-center gap-5">
+                            <i class="fa-solid fa-location-dot text-xl text-white"></i>
+                            <span class="text-sm">Alamat perusahaan</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex gap-4 relative z-10 mt-20">
+                    <a href="https://www.tiktok.com/@yapscholn" class="w-9 h-9 hover:scale-110 transition-all overflow-hidden">
+        <img src="assets/tiktok.png" alt="Tiktok" class="w-full h-full object-cover">
+    </a>
+                    <a href="https://www.instagram.com/yapscholn" class="w-9 h-9 hover:scale-110 transition-all overflow-hidden">
+        <img src="assets/IG.png" alt="Instagram" class="w-full h-full object-cover">
+    </a>
+                </div>
+
+                <div class="absolute -bottom-16 -right-16 w-56 h-56 bg-white/10 rounded-full"></div>
+                <div class="absolute bottom-10 right-10 w-32 h-32 bg-white/5 rounded-full"></div>
+            </div>
+
+            <div class="w-full lg:w-[60%] p-10 md:p-14 bg-white">
+                <form class="space-y-10">
+                    <div>
+                        <label class="block text-[15px] font-bold text-[#043873] mb-5">Organisasi / Individu</label>
+                        <div class="flex gap-8">
+                            <label class="flex items-center gap-2 cursor-pointer group">
+                                <input type="radio" name="collab-type" value="individu" class="w-4 h-4 accent-[#043873]" checked onchange="updateContent(this.value)">
+                                <span class="text-sm font-medium group-hover:text-[#043873]">Individu</span>
+                            </label>
+                            <label class="flex items-center gap-2 cursor-pointer group">
+                                <input type="radio" name="collab-type" value="organisasi" class="w-4 h-4 accent-[#043873]" onchange="updateContent(this.value)">
+                                <span class="text-sm font-medium group-hover:text-[#043873]">Organisasi</span>
+                            </label>
+                        </div>
+                    </div> 
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                        <div class="border-b border-gray-300 pb-2 focus-within:border-[#043873] transition-colors">
+                            <label id="lbl-1" class="block text-[11px] uppercase tracking-wider text-gray-500 font-semibold mb-1">Nama</label>
+                            <input id="inp-1" type="text" placeholder="" class="w-full outline-none text-[15px] font-medium text-gray-800 bg-transparent">
+                        </div>
+                        <div class="border-b border-gray-300 pb-2 focus-within:border-[#043873] transition-colors">
+                            <label id="lbl-2" class="block text-[11px] uppercase tracking-wider text-gray-500 font-semibold mb-1">Asal Institusi</label>
+                            <input id="inp-2" type="text" placeholder="Asal Institusi" class="w-full outline-none text-[13px]  text-gray-800 bg-transparent">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                        <div class="border-b border-gray-300 pb-2 focus-within:border-[#043873] transition-colors">
+                            <label id="lbl-3" class="block text-[11px] uppercase tracking-wider text-gray-500 font-semibold mb-1">Email</label>
+                            <input id="inp-3" type="email" placeholder="Email" class="w-full outline-none text-[13px] text-gray-800 bg-transparent">
+                        </div>
+                        <div class="border-b border-gray-300 pb-2 focus-within:border-[#043873] transition-colors">
+                            <label id="lbl-4" class="block text-[11px] uppercase tracking-wider text-gray-500 font-semibold mb-1">No Handphone</label>
+                            <input id="inp-4" type="text" placeholder="No Handphone" class="w-full outline-none text-[13px] text-gray-800 bg-transparent">
+                        </div>
+                    </div>
+
+                    <div class="border-b border-gray-300 pb-2 focus-within:border-[#043873] transition-colors">
+                        <label class="block text-[11px] uppercase tracking-wider text-gray-500 font-semibold mb-1">Message</label>
+                        <textarea placeholder="Tulis disini..." rows="1" class="w-full outline-none text-[13px] text-gray-800 bg-transparent resize-none"></textarea>
+                    </div>
+
+                    <div class="flex justify-end pt-6">
+                        <button type="submit" class="bg-[#043873] hover:bg-blue-900 text-white py-3.5 px-12 rounded-lg shadow-xl transition-all active:scale-95">
+                            Kirim Pesan
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="min-h-[526px] w-full bg-white relative overflow-hidden flex items-center py-10">
+    
+    <img src="assets/elementBG.png" alt="" class="absolute inset-0 w-full h-full object-cover z-0 opacity-70">
+
+    <div class="max-w-[1196px] mx-auto px-4 lg:px-[122px] relative z-10">
+        
+        <div class="flex flex-col md:flex-row items-center gap-12 lg:gap-20">
+            
+            <div class="w-full md:w-1/2 flex justify-start"> <img src="assets/ilustrasi.png" 
+         alt="Ilustrasi" 
+         class="max-w-full h-auto lg:max-w-[500px] md:-ml-20 lg:-ml-32"> 
+         </div>
+
+            <div class="w-full md:w-1/2 text-center md:text-left">
+                <h2 class="font-poppins text-4xl md:text-5xl font-bold mb-6 leading-tight">
+                    <span class="text-[#1A1A1A]">Forum</span> 
+                    <span class="bg-gradient-to-r from-[#FFD600] to-[#B8A200] bg-clip-text text-transparent inline-block">
+                        Cendikia
+                    </span>
+                </h2>
+
+                <p class="font-inter text-gray-600 text-[16px] leading-relaxed mb-10 max-w-lg mx-auto md:mx-0">
+                    Ruang komunikasi terbuka untuk berbagi ide, berdiskusi, dan menemukan partner kolaborasi.
+                </p>
+
+                <a href="#" class="inline-block w-full sm:w-auto text-center bg-gradient-to-r from-[#4475E1] to-[#E5C100] text-white font-inter font-semibold py-4 px-10 rounded-xl shadow-md hover:shadow-lg transition-all active:scale-95 text-[15px]">
+                    Mulai Diskusi
+                </a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<script>
+function updateContent(val) {
+    const labels = {
+        individu: ["Nama", "Asal Institusi", "Email", "No Handphone"],
+        organisasi: ["Nama Organisasi", "Nama PJ", "Email", "No Handphone"]
+    };
+    const placeholders = {
+        individu: ["", "Asal Institusi", "Email", "No Handphone"],
+        organisasi: ["etc. Yapindo", "Nama penanggung jawab", "Email organisasi", "No handphone Organisasi"]
+    };
+
+    const type = val === 'organisasi' ? 'organisasi' : 'individu';
+    
+    for(let i=1; i<=4; i++) {
+        document.getElementById(`lbl-${i}`).innerText = labels[type][i-1];
+        document.getElementById(`inp-${i}`).placeholder = placeholders[type][i-1];
+    }
+}
+</script>
+    <div id="footer-placeholder"></div>
+
+    <script>
+    // Fungsi untuk memanggil komponen
+function loadComponent(id, path) {
+    fetch(path)
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById(id).innerHTML = data;
+        });
+}
+loadComponent('nav-placeholder', 'components/navbar.html');
+loadComponent('footer-placeholder', 'components/footer.html');
+</script>
+</body>
+</html>
