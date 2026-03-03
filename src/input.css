@@ -1,12 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 @import "tailwindcss";
 
+/* 
+   Tailwind v4 Configuration 
+   Mendaftarkan folder agar ter-scan otomatis
+*/
+@source "../views/**/*.html";
+@source "../components/**/*.html";
+@source "../index.html";
+
 @theme {
-  --font-poppins: "Poppins", sans-serif;
-  --font-sans: "Poppins", sans-serif;
+  --font-poppins: "Poppins", "sans-serif";
 }
 
-@layer base {
-  body {
-    @apply font-poppins;
-  }
+/* 
+   Eksplisit Utility untuk memastikan font-poppins dapat dipanggil kapanpun.
+   Diberi !important agar dia menang di mana saja Mas panggil.
+*/
+@utility font-poppins {
+  font-family: "Poppins", sans-serif !important;
+}
+
+@utility font-Poppins {
+  font-family: "Poppins", sans-serif !important;
+}
+
+/* 
+   CUSTOM TAILWIND UTILITIES
+*/
+@utility card-pengurus {
+  width: 210px;
+  height: 270px;
+  flex: none;
+}
+
+@utility card-operasional {
+  width: 230px;
+  height: 290px;
+  flex: none;
 }

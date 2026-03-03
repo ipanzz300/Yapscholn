@@ -5,24 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yapscholn</title>
 
-    <!-- Google Fonts (Poppins) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-
     <!-- Tailwind CSS (Generated via CLI) -->
-    <link href="css/style.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
 </head>
 <body>
 
     <div id="nav-placeholder" class="sticky top-0 z-50"></div>
 
-    <section class="relative py-12 md:py-20 overflow-hidden bg-blue-50">
+    <section class="relative py-12 md:py-20 overflow-hidden bg-linear-to-b from-[#F3F8FF] to-white">
         <div class="max-w-7xl mx-auto px-4 md:px-12 flex flex-col md:flex-row items-center justify-between gap-10">
-            <div class="relative -top-20 md:w-1/2 text-left">
-                <h1 class="text-2xl md:text-4xl font-extrabold text-gray-900 leading-tight">
+            <div class="relative md:-top-20 md:w-1/2 text-left z-10">
+                <h1 class="text-3xl sm:text-4xl md:text-4xl font-extrabold text-gray-900 leading-tight">
                     Platform Untuk
-                    <span class="text-blue-600">Edukasi, Menulis Artikel dan Berinovasi Bersama</span>
+                    <span class="text-blue-600 block sm:inline">Edukasi, Menulis Artikel dan Berinovasi Bersama</span>
                 </h1>
                 <p class="mt-6 text-lg leading-relaxed font-semibold">
                     Wadah kolaboratif bagi dosen, mahasiswa, peneliti, dan praktisi yang
@@ -35,41 +30,41 @@
                     </button>
                     <div class="flex items-center gap-3">
                         <div class="flex -space-x-2">
-                            <img src="assets/avatar.png" alt="U1" class="w-10 h-10 rounded-full border border-black object-cover" />
-                            <img src="assets/avatar2.png" alt="U2" class="w-10 h-10 rounded-full border border-black object-cover" />
-                            <img src="assets/avatar3.png" alt="U3" class="w-10 h-10 rounded-full border border-black object-cover" />
+                            <img src="../assets/avatar.png" alt="U1" class="w-10 h-10 rounded-full border border-black object-cover" />
+                            <img src="../assets/avatar2.png" alt="U2" class="w-10 h-10 rounded-full border border-black object-cover" />
+                            <img src="../assets/avatar3.png" alt="U3" class="w-10 h-10 rounded-full border border-black object-cover" />
                         </div>
-                        <p class="text-sm font-medium ml-10 leading-tight">
+                        <p class="text-sm font-medium ml-4 md:ml-10 leading-tight">
                             Lebih dari 2.000+ orang sudah bergabung dengan kami
                         </p>
                     </div>
                 </div>
             </div>
             <div class="md:w-1/2 relative flex justify-center">
-                <img src="assets/Frame 14496.png" alt="Hero Image" class="w-full max-w-md md:max-w-xl h-auto object-contain" />
+                <img src="../assets/Frame 14496.png" alt="Hero Image" class="w-full max-w-md md:max-w-xl h-auto object-contain" />
             </div>
         </div>
 
         <div class="max-w-7xl mx-auto px-4 md:px-12 relative z-20 -mt-20 md:-mt-32">
             <div class="bg-white rounded-2xl shadow-xl border border-gray-100 p-8 grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div class="flex items-center gap-4">
-                    <img src="assets/Frame 8.png" class="w-12 h-12 object-contain shrink-0" alt="icon" />
+                    <img src="../assets/Frame 8.png" class="w-12 h-12 object-contain shrink-0" alt="icon" />
                     <div>
                         <h3 class="font-semibold text-gray-900">Komitmen</h3>
                         <p class="text-sm">Kami Berkomitmen Menghadirkan Pendidikan Berkualitas</p>
                     </div>
                 </div>
 
-                <div class="flex items-center gap-4 border-t md:border-t-0 md:border-x border-gray-100 pt-6 md:pt-0 md:px-8">
-                    <img src="assets/Group 5.png" class="w-12 h-12" alt="icon" />
+                <div class="flex items-center gap-4 md:border-x md:border-gray-100 pt-6 md:pt-0 md:px-8">
+                    <img src="../assets/Group 5.png" class="w-12 h-12" alt="icon" />
                     <div>
                         <h3 class="font-semibold text-gray-900">Integritas</h3>
                         <p class="text-sm">Menanamkan nilai kejujuran dalam setiap langkah.</p>
                     </div>
                 </div>
 
-                <div class="flex items-center gap-4 border-t md:border-t-0 pt-6 md:pt-0">
-                    <img src="assets/Group 4.png" class="w-12 h-12" alt="icon" />
+                <div class="flex items-center gap-4 pt-6 md:pt-0">
+                    <img src="../assets/Group 4.png" class="w-12 h-12" alt="icon" />
                     <div>
                         <h3 class="font-semibold text-gray-900">Transparan</h3>
                         <p class="text-sm">Informasi jelas, proses terbuka, tanpa keraguan.</p>
@@ -93,7 +88,8 @@
                 </p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6 max-w-[860px] mx-auto md:translate-x-2">
-                <div class="flex items-center gap-[16.79px] p-[17px] bg-white rounded-2xl border border-blue-400 shadow-sm w-full max-w-[404px] min-h-[103px]">
+                <!-- Card 1 (Posisi 1 di Desktop) -->
+                <div class="flex items-center gap-[16.79px] p-[17px] bg-white rounded-2xl border border-blue-400 shadow-sm w-full max-w-[404px] min-h-[103px] md:order-1">
                     <div class="w-14 h-14 shrink-0 bg-[#2B63E1] text-white rounded-full flex items-center justify-center text-2xl font-bold">1</div>
                     <div class="flex flex-col">
                         <p class="text-[14px] capitalize leading-none">Pembicara</p>
@@ -103,17 +99,8 @@
                     </div>
                 </div>
 
-                <div class="flex items-center gap-[16.79px] p-[17px] bg-white rounded-2xl border border-blue-400 shadow-sm w-full max-w-[404px] min-h-[103px]">
-                    <div class="w-14 h-14 shrink-0 bg-[#F97316] text-white rounded-full flex items-center justify-center text-2xl font-semibold">5</div>
-                    <div class="flex flex-col">
-                        <p class="text-[14px] capitalize leading-none">Diskon</p>
-                        <h3 class="text-gray-900 text-[16px] leading-[1.2] font-semibold mt-2">
-                            Keeistimewaan Dalam Mengikuti Webinar / Workshop
-                        </h3>
-                    </div>
-                </div>
-
-                <div class="flex items-center gap-[16.79px] p-[17px] bg-white rounded-2xl border border-blue-400 shadow-sm w-full max-w-[404px] min-h-[103px]">
+                <!-- Card 2 (Posisi 3 di Desktop) -->
+                <div class="flex items-center gap-[16.79px] p-[17px] bg-white rounded-2xl border border-blue-400 shadow-sm w-full max-w-[404px] min-h-[103px] md:order-3">
                     <div class="w-14 h-14 shrink-0 bg-[#22C55E] text-white rounded-full flex items-center justify-center text-2xl font-semibold">2</div>
                     <div class="flex flex-col">
                         <p class="text-[14px] capitalize leading-none">Diskon</p>
@@ -123,17 +110,8 @@
                     </div>
                 </div>
 
-                <div class="flex items-center gap-[16.79px] p-[17px] bg-white rounded-2xl border border-blue-400 shadow-sm w-full max-w-[404px] min-h-[103px]">
-                    <div class="w-14 h-14 shrink-0 bg-[#7C3AED] text-white rounded-full flex items-center justify-center text-2xl font-semibold">6</div>
-                    <div class="flex flex-col">
-                        <p class="text-[14px] capitalize leading-none">Diskon</p>
-                        <h3 class="text-gray-900 text-[16px] leading-[1.2] font-semibold mt-2">
-                            Keeistimewaan Dalam Mengikuti Webinar / Workshop
-                        </h3>
-                    </div>
-                </div>
-
-                <div class="flex items-center gap-[16.79px] p-[17px] bg-white rounded-2xl border border-blue-400 shadow-sm w-full max-w-[404px] min-h-[103px]">
+                <!-- Card 3 (Posisi 5 di Desktop) -->
+                <div class="flex items-center gap-[16.79px] p-[17px] bg-white rounded-2xl border border-blue-400 shadow-sm w-full max-w-[404px] min-h-[103px] md:order-5">
                     <div class="w-14 h-14 shrink-0 bg-[#EF4444] text-white rounded-full flex items-center justify-center text-2xl font-semibold">3</div>
                     <div class="flex flex-col">
                         <p class="text-[14px] capitalize leading-none">Diskon</p>
@@ -143,17 +121,8 @@
                     </div>
                 </div>
 
-                <div class="flex items-center gap-[16.79px] p-[17px] bg-white rounded-2xl border border-blue-400 shadow-sm w-full max-w-[404px] min-h-[103px]">
-                    <div class="w-14 h-14 shrink-0 bg-[#374151] text-white rounded-full flex items-center justify-center text-2xl font-semibold">7</div>
-                    <div class="flex flex-col">
-                        <p class="text-[14px] capitalize leading-none">Diskon</p>
-                        <h3 class="text-gray-900 text-[16px] leading-[1.2] font-semibold mt-2">
-                            Keeistimewaan Dalam Mengikuti Webinar / Workshop
-                        </h3>
-                    </div>
-                </div>
-
-                <div class="flex items-center gap-[16.79px] p-[17px] bg-white rounded-2xl border border-blue-400 shadow-sm w-full max-w-[404px] min-h-[103px]">
+                <!-- Card 4 (Posisi 7 di Desktop) -->
+                <div class="flex items-center gap-[16.79px] p-[17px] bg-white rounded-2xl border border-blue-400 shadow-sm w-full max-w-[404px] min-h-[103px] md:order-7">
                     <div class="w-14 h-14 shrink-0 bg-[#14B8A6] text-white rounded-full flex items-center justify-center text-2xl font-semibold">4</div>
                     <div class="flex flex-col">
                         <p class="text-[14px] capitalize leading-none">Diskon</p>
@@ -163,7 +132,41 @@
                     </div>
                 </div>
 
-                <div class="flex items-center gap-[16.79px] p-[17px] bg-white rounded-2xl border border-blue-400 shadow-sm w-full max-w-[404px] min-h-[103px]">
+                <!-- Card 5 (Posisi 2 di Desktop) -->
+                <div class="flex items-center gap-[16.79px] p-[17px] bg-white rounded-2xl border border-blue-400 shadow-sm w-full max-w-[404px] min-h-[103px] md:order-2">
+                    <div class="w-14 h-14 shrink-0 bg-[#F97316] text-white rounded-full flex items-center justify-center text-2xl font-semibold">5</div>
+                    <div class="flex flex-col">
+                        <p class="text-[14px] capitalize leading-none">Diskon</p>
+                        <h3 class="text-gray-900 text-[16px] leading-[1.2] font-semibold mt-2">
+                            Keeistimewaan Dalam Mengikuti Webinar / Workshop
+                        </h3>
+                    </div>
+                </div>
+
+                <!-- Card 6 (Posisi 4 di Desktop) -->
+                <div class="flex items-center gap-[16.79px] p-[17px] bg-white rounded-2xl border border-blue-400 shadow-sm w-full max-w-[404px] min-h-[103px] md:order-4">
+                    <div class="w-14 h-14 shrink-0 bg-[#7C3AED] text-white rounded-full flex items-center justify-center text-2xl font-semibold">6</div>
+                    <div class="flex flex-col">
+                        <p class="text-[14px] capitalize leading-none">Diskon</p>
+                        <h3 class="text-gray-900 text-[16px] leading-[1.2] font-semibold mt-2">
+                            Keeistimewaan Dalam Mengikuti Webinar / Workshop
+                        </h3>
+                    </div>
+                </div>
+
+                <!-- Card 7 (Posisi 6 di Desktop) -->
+                <div class="flex items-center gap-[16.79px] p-[17px] bg-white rounded-2xl border border-blue-400 shadow-sm w-full max-w-[404px] min-h-[103px] md:order-6">
+                    <div class="w-14 h-14 shrink-0 bg-[#374151] text-white rounded-full flex items-center justify-center text-2xl font-semibold">7</div>
+                    <div class="flex flex-col">
+                        <p class="text-[14px] capitalize leading-none">Diskon</p>
+                        <h3 class="text-gray-900 text-[16px] leading-[1.2] font-semibold mt-2">
+                            Keeistimewaan Dalam Mengikuti Webinar / Workshop
+                        </h3>
+                    </div>
+                </div>
+
+                <!-- Card 8 (Posisi 8 di Desktop) -->
+                <div class="flex items-center gap-[16.79px] p-[17px] bg-white rounded-2xl border border-blue-400 shadow-sm w-full max-w-[404px] min-h-[103px] md:order-8">
                     <div class="w-14 h-14 shrink-0 bg-[#FACC15] text-white rounded-full flex items-center justify-center text-2xl font-semibold">8</div>
                     <div class="flex flex-col">
                         <p class="text-[14px] capitalize leading-none">Diskon</p>
@@ -206,7 +209,7 @@
             <div class="flex gap-8 overflow-x-auto pb-8 pt-4 snap-x snap-mandatory no-scrollbar px-4 md:px-0 justify-start md:justify-center">
                 <div class="min-w-[300px] md:w-[350px] bg-white rounded-3xl p-8 shadow-lg snap-center flex flex-col items-start transition-all hover:-translate-y-2 duration-300">
                     <div class="w-14 h-14 rounded-full bg-blue-50 flex items-center justify-center mb-6">
-                        <img src="assets/Vector.png" class="w-8 h-8 object-contain" alt="Icon" />
+                        <img src="../assets/Vector.png" class="w-8 h-8 object-contain" alt="Icon" />
                     </div>
                     <h3 class="text-lg font-bold text-gray-900 mb-3">Professional & Career Development</h3>
                     <p class="text-sm text-gray-500 leading-relaxed">
@@ -216,7 +219,7 @@
 
                 <div class="min-w-[300px] md:w-[350px] bg-white rounded-3xl p-8 shadow-2xl snap-center flex flex-col items-start transform md:scale-110 z-10 border-2 border-blue-400 relative">
                     <div class="w-14 h-14 rounded-full bg-blue-50 flex items-center justify-center mb-6">
-                        <img src="assets/Group 16.png" class="w-8 h-8 object-contain" alt="Icon" />
+                        <img src="../assets/Group 16.png" class="w-8 h-8 object-contain" alt="Icon" />
                     </div>
                     <h3 class="text-lg font-bold text-blue-600 mb-3">Interdisciplinary Collaboration</h3>
                     <p class="text-sm text-gray-500 leading-relaxed">
@@ -226,7 +229,7 @@
 
                 <div class="min-w-[300px] md:w-[350px] bg-white rounded-3xl p-8 shadow-lg snap-center flex flex-col items-start transition-all hover:-translate-y-2 duration-300">
                     <div class="w-14 h-14 rounded-full bg-blue-50 flex items-center justify-center mb-6">
-                        <img src="assets/vector src.png" class="w-8 h-8 object-contain" alt="Icon" />
+                        <img src="../assets/vector src.png" class="w-8 h-8 object-contain" alt="Icon" />
                     </div>
                     <h3 class="text-lg font-bold text-gray-900 mb-3">Research & Knowledge Sharing</h3>
                     <p class="text-sm text-gray-500 leading-relaxed">
@@ -262,14 +265,14 @@
                 </button>
             </div>
             <div class="lg:w-1/2 w-full flex flex-col items-center">
-                <img src="assets/Frame 79.png" class="mb-16 w-full h-auto object-contain" alt="Partner Yapindo Map" />
+                <img src="../assets/Frame 79.png" class="mb-16 w-full h-auto object-contain" alt="Partner Yapindo Map" />
             </div>
         </div>
     </section>
 
     <section class="pt-12 pb-16 mt-16 bg-[#043873] relative overflow-hidden">
         <div class="absolute inset-0 pointer-events-none z-0 flex items-center">
-            <img src="assets/Element.png" class="w-full h-[70%] object-cover opacity-60" alt="Background Line" />
+            <img src="../assets/Element.png" class="w-full h-[70%] object-cover opacity-60" alt="Background Line" />
         </div>
 
         <div class="max-w-7xl mx-auto px-6 relative z-10 pt-10">
@@ -290,13 +293,13 @@
                     </button>
                 </div>
                 <div class="lg:col-span-7 relative flex justify-end">
-                    <img src="assets/p yap.png" class="w-full h-auto drop-shadow-2xl scale-110 lg:-translate-x-8" alt="Produk Logos" />
+                    <img src="../assets/p yap.png" class="w-full h-auto drop-shadow-2xl scale-110 lg:-translate-x-8" alt="Produk Logos" />
                 </div>
             </div>
 
             <div class="grid lg:grid-cols-12 gap-10 items-center">
                 <div class="lg:col-span-7 relative flex justify-start order-2 lg:order-1">
-                    <img src="assets/p yap2.png" class="w-full h-auto drop-shadow-2xl scale-110 lg:translate-x-7" alt="Mitra Logos" />
+                    <img src="../assets/p yap2.png" class="w-full h-auto drop-shadow-2xl scale-110 lg:translate-x-7" alt="Mitra Logos" />
                 </div>
                 <div class="lg:col-span-5 text-left z-20 order-1 lg:order-2 lg:pl-10">
                     <h3 class="text-3xl font-bold text-white mb-4">
@@ -321,8 +324,8 @@
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                 
                 <div class="group relative overflow-hidden rounded-3xl aspect-[4/5] shadow-lg cursor-pointer" 
-     onclick="openModal('assets/slide6/image 35.png', 'Sponsorship', 'Sponsorship')">
-    <img src="assets/slide6/image 35.png" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="Sponsorship" />
+     onclick="openModal('../assets/slide6/image 35.png', 'Sponsorship', 'Sponsorship')">
+    <img src="../assets/slide6/image 35.png" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="Sponsorship" />
     <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end p-6">
         <p class="text-gray-300 text-xs mb-1">Sponsorship</p>
         <h4 class="text-white font-bold text-lg">Sponsorship</h4>
@@ -330,8 +333,8 @@
 </div>
 
                 <div class="group relative overflow-hidden rounded-3xl aspect-[4/5] shadow-lg cursor-pointer" 
-                onClick="openModal('assets/slide6/image 35 (1).png', 'Meeting', 'Pengembangan Jurnal')">
-                    <img src="assets/slide6/image 35 (1).png" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="Pengembangan Jurnal" />
+                onClick="openModal('../assets/slide6/image 35 (1).png', 'Meeting', 'Pengembangan Jurnal')">
+                    <img src="../assets/slide6/image 35 (1).png" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="Pengembangan Jurnal" />
                     <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end p-6">
                         <p class="text-gray-300 text-xs mb-1">Meeting</p>
                         <h4 class="text-white font-bold text-lg">Pengembangan Jurnal</h4>
@@ -339,8 +342,8 @@
                 </div>
 
                 <div class="group relative overflow-hidden rounded-3xl aspect-[4/5] shadow-lg cursor-pointer"
-                onclick="openModal('assets/slide6/image 35 (2).png', 'Penghargaan', 'Piagam Penghargaan Oleh BKKBN Kepada Yapindo')">
-                    <img src="assets/slide6/image 35 (2).png" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="Piagam Penghargaan" />
+                onclick="openModal('../assets/slide6/image 35 (2).png', 'Penghargaan', 'Piagam Penghargaan Oleh BKKBN Kepada Yapindo')">
+                    <img src="../assets/slide6/image 35 (2).png" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="Piagam Penghargaan" />
                     <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end p-6">
                         <p class="text-gray-300 text-xs mb-1">Penghargaan</p>
                         <h4 class="text-white font-bold text-lg leading-tight">Piagam Penghargaan Oleh BKKBN Kepada Yapindo</h4>
@@ -348,8 +351,8 @@
                 </div>
 
                 <div class="group relative overflow-hidden rounded-3xl aspect-[4/5] shadow-lg cursor-pointer"
-                 onclick="openModal('assets/slide6/image 35 (3).png', 'Penghargaan', 'Penghargaan BKKBN')">
-                    <img src="assets/slide6/image 35 (3).png" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="Penghargaan BKKBN" />
+                 onclick="openModal('../assets/slide6/image 35 (3).png', 'Penghargaan', 'Penghargaan BKKBN')">
+                    <img src="../assets/slide6/image 35 (3).png" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="Penghargaan BKKBN" />
                     <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end p-6">
                         <p class="text-gray-300 text-xs mb-1">Penghargaan</p>
                         <h4 class="text-white font-bold text-lg">Penghargaan BKKBN</h4>
@@ -357,8 +360,8 @@
                 </div>
 
                 <div class="group relative overflow-hidden rounded-3xl aspect-[4/5] shadow-lg cursor-pointer"
-                onclick="openModal('assets/slide6/image 35 (4).png', 'Penghargaan', 'Kick Off Pengasuhan 1000 HPK')">
-                    <img src="assets/slide6/image 35 (4).png" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="Kick Off" />
+                onclick="openModal('../assets/slide6/image 35 (4).png', 'Penghargaan', 'Kick Off Pengasuhan 1000 HPK')">
+                    <img src="../assets/slide6/image 35 (4).png" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="Kick Off" />
                     <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end p-6">
                         <p class="text-gray-300 text-xs mb-1">Penghargaan</p>
                         <h4 class="text-white font-bold text-lg">Kick Off Pengasuhan 1000 HPK</h4>
@@ -366,8 +369,8 @@
                 </div>
 
                 <div class="group relative overflow-hidden rounded-3xl aspect-[4/5] shadow-lg cursor-pointer"
-                 onclick="openModal('assets/slide6/image 35 (5).png', 'Seminar', 'Gizi Nusantara & Patners Goes to School')">
-                    <img src="assets/slide6/image 35 (5).png" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="Kick Off" />
+                 onclick="openModal('../assets/slide6/image 35 (5).png', 'Seminar', 'Gizi Nusantara & Patners Goes to School')">
+                    <img src="../assets/slide6/image 35 (5).png" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="Kick Off" />
                     <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end p-6">
                         <p class="text-gray-300 text-xs mb-1">Seminar</p>
                         <h4 class="text-white font-bold text-lg">Gizi Nusantara & Patners Goes to School</h4>
@@ -375,8 +378,8 @@
                 </div>
 
                 <div class="group relative overflow-hidden rounded-3xl aspect-[4/5] shadow-lg cursor-pointer"
-                 onclick="openModal('assets/slide6/image 35 (6).png', 'Meeting', 'Pengembangan Jurnal (2)')">
-                    <img src="assets/slide6/image 35 (6).png" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="Kick Off" />
+                 onclick="openModal('../assets/slide6/image 35 (6).png', 'Meeting', 'Pengembangan Jurnal (2)')">
+                    <img src="../assets/slide6/image 35 (6).png" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="Kick Off" />
                     <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end p-6">
                         <p class="text-gray-300 text-xs mb-1">Meeting</p>
                         <h4 class="text-white font-bold text-lg">Pengembangan Jurnal (2)</h4>
@@ -384,8 +387,8 @@
                 </div>
 
                 <div class="group relative overflow-hidden rounded-3xl aspect-[4/5] shadow-lg cursor-pointer"
-                 onclick="openModal('assets/slide6/image 35 (7).png', 'Penghargaan', 'Penghargaan Yapindo')">
-                    <img src="assets/slide6/image 35 (7).png" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="Kick Off" />
+                 onclick="openModal('../assets/slide6/image 35 (7).png', 'Penghargaan', 'Penghargaan Yapindo')">
+                    <img src="../assets/slide6/image 35 (7).png" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="Kick Off" />
                     <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end p-6">
                         <p class="text-gray-300 text-xs mb-1">Penghargaan</p>
                         <h4 class="text-white font-bold text-lg">Penghargaan Yapindo</h4>
@@ -408,7 +411,7 @@
             
             <div class="flex flex-col h-full bg-white p-4 rounded-2xl shadow-sm">
                 <div class="rounded-2xl overflow-hidden mb-4 shadow-sm aspect-video shrink-0">
-                    <img src="assets/dummy.jpg" class="w-full h-full object-cover" alt="Kekuatan Kasih Sayang">
+                    <img src="../assets/dummy.jpg" class="w-full h-full object-cover" alt="Kekuatan Kasih Sayang">
                 </div>
                 <div class="flex flex-col flex-grow">
                     <div class="flex justify-between items-center mb-3">
@@ -430,7 +433,7 @@
 
             <div class="flex flex-col h-full bg-white p-4 rounded-2xl shadow-sm">
                 <div class="rounded-2xl overflow-hidden mb-4 shadow-sm aspect-video shrink-0">
-                    <img src="assets/Rectangle 10.png" class="w-full h-full object-cover" alt="Memimpin Dengan Hati">
+                    <img src="../assets/Rectangle 10.png" class="w-full h-full object-cover" alt="Memimpin Dengan Hati">
                 </div>
                 <div class="flex flex-col flex-grow">
                     <div class="flex justify-between items-center mb-3">
@@ -452,7 +455,7 @@
 
             <div class="flex flex-col h-full bg-white p-4 rounded-2xl shadow-sm">
                 <div class="rounded-2xl overflow-hidden mb-4 shadow-sm aspect-video shrink-0">
-                    <img src="assets/Rectangle 10.png" class="w-full h-full object-cover" alt="Cara Halus UPF">
+                    <img src="../assets/Rectangle 10.png" class="w-full h-full object-cover" alt="Cara Halus UPF">
                 </div>
                 <div class="flex flex-col flex-grow">
                     <div class="flex justify-between items-center mb-3">
@@ -474,7 +477,7 @@
 
             <div class="flex flex-col h-full bg-white p-4 rounded-2xl shadow-sm">
                 <div class="rounded-2xl overflow-hidden mb-4 shadow-sm aspect-video shrink-0">
-                    <img src="assets/visimisi.png" class="w-full h-full object-cover" alt="Keyakinan Batin">
+                    <img src="../assets/visimisi.png" class="w-full h-full object-cover" alt="Keyakinan Batin">
                 </div>
                 <div class="flex flex-col flex-grow">
                     <div class="flex justify-between items-center mb-3">
@@ -514,48 +517,38 @@
 
 <div id="footer-placeholder"></div>
 
-<script src="js/lightbox.js"></script>
-
- <!-- COMPONENTS -->
-<script>
-    // Fungsi untuk memanggil komponen
-function loadComponent(id, path) {
-    fetch(path)
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById(id).innerHTML = data;
-        });
-}
-loadComponent('nav-placeholder', 'components/navbar.html');
-loadComponent('footer-placeholder', 'components/footer.html');
-</script>
-
- <!-- LANGUAGE -->
-<script src="js/language.js"></script>
+<script src="../js/lightbox.js"></script>
+<script src="../js/language.js"></script>
+<script src="../js/navbar.js"></script>
 
 <script>
     function loadComponent(id, path) {
         fetch(path)
             .then(response => response.text())
             .then(data => {
-                document.getElementById(id).innerHTML = data;
-                
-                // CRITICAL STEP: 
-                // Jika yang dimuat adalah navbar, jalankan fungsi initLanguage 
-                // yang ada di dalam file language.js tadi
-                if (id === 'nav-placeholder') {
-                    initLanguage();
+                const element = document.getElementById(id);
+                if (element) {
+                    element.innerHTML = data;
                     
-                    // Cek jika user sudah pernah pilih bahasa sebelumnya
-                    const savedLang = localStorage.getItem('selectedLang');
-                    if(savedLang) document.getElementById('currentLang').innerText = savedLang;
+                    if (id === 'nav-placeholder') {
+                        if (typeof initNavbar === 'function') initNavbar();
+                        
+                        if (typeof initLanguage === 'function') {
+                            initLanguage();
+                            const savedLang = localStorage.getItem('selectedLang');
+                            if(savedLang) {
+                                const currentLangEl = document.getElementById('currentLang');
+                                if(currentLangEl) currentLangEl.innerText = savedLang;
+                            }
+                        }
+                    }
                 }
-            });
+            })
+            .catch(err => console.error('Gagal memuat komponen:', err));
     }
 
-    // Eksekusi pemanggilan
-    loadComponent('nav-placeholder', 'components/navbar.html');
-    loadComponent('footer-placeholder', 'components/footer.html');
+    loadComponent('nav-placeholder', '../components/navbar.html');
+    loadComponent('footer-placeholder', '../components/footer.html');
 </script>
 
 
