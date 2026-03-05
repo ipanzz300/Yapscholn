@@ -15,13 +15,12 @@ if %ERRORLEVEL% NEQ 0 (
     exit /b
 )
 
-echo Sedang memproses CSS...
-call npx tailwindcss -i src/input.css -o css/style.css --minify
+echo Sedang memantau perubahan file (Mode Watch Aktif)...
+echo (Jangan tutup jendela ini selama Mas masih ngoding ya!)
+echo.
+call npx tailwindcss -i src/input.css -o css/style.css --watch
 
-if %ERRORLEVEL% EQU 0 (
-    echo.
-    echo [BERHASIL] File css/style.css sudah diupdate!
-) else (
+if %ERRORLEVEL% NEQ 0 (
     echo.
     echo [ERROR] Gagal menjalankan Tailwind.
 )
