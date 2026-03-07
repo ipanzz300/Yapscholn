@@ -9,7 +9,7 @@
 <body>
     <div id="nav-placeholder" class="sticky top-0 z-50"></div>
 
-    <section class="py-16">
+    <section class="pt-20 pb-2">
         <div class="max-w-7xl mx-auto px-4 md:px-12">
             <h2 class="text-2xl md:text-4xl font-bold mb-10 -mt-11"><span class="text-blue-900">Direkomendasikan </span>Untuk Anda
             </h2>
@@ -74,7 +74,7 @@
     <section class="py-10">
     <div class="max-w-7xl mx-auto px-4 md:px-12">
         <div class="border-t border-gray-300 mb-16"></div>
-        <div class="text-center mb-16">
+        <div class="text-center mb-10">
             <h2 class="text-3xl font-bold">Artikel <span class="text-blue-900 text-3xl font-bold mt-2">Terbaru</span></h2>
         </div>
 
@@ -149,53 +149,110 @@
     </div>
 </section>
 
-<section class="py-20 overflow-hidden">
-    <div class="max-w-7xl mx-auto px4 md:px-12">
-        <div class="flex flex-col lg:flex-row gap-16">
+<section class="pt-10 pb-10 overflow-hidden">
+    <div class="border-t border-gray-300 mb-20"></div>
+    <div class="max-w-7xl mx-auto px-4 md:px-12 ">
+        <div class="flex flex-col lg:flex-row gap-16 items-start">
 
-            <div class="lg:w-2/5 flex flex-col">
+            <div class="lg:w-2/5 flex flex-col lg:sticky lg:top-32">
                 <span class="text-blue-900 font-semibold text-2xl font-Poppins">Trending</span>
                 <h2 class="text-4xl md:text-[50px] font-bold leading-[1.1] mb-5 mt-15">Artikel Trending Harus Anda Baca!</h2>
-                <p class="">Setiap artikel kami hadir untuk menginspirasi dan memperluas wawasan Anda. Pastikan Anda tidak ketinggalan pembaruan terbaru.</p>
-                <div class="mt-auto pb-10">
-                    <img src="../assets/OBJECTS.png" alt="w-full h-auto object-contain max-w-md">
+                <p class="text-gray-600">Setiap artikel kami hadir untuk menginspirasi dan memperluas wawasan Anda. Pastikan Anda tidak ketinggalan pembaruan terbaru.</p>
+                <div class="mt-8 lg:mt-15">
+                    <img src="../assets/OBJECTS.png" alt="Illustration" class="w-full h-auto object-contain max-w-sm">
                 </div>
             </div>
-                <div class="lg:w-3/5 flex flex-col gap-8">
+               <div class="lg:w-3/5 h-[700px] overflow-y-auto pr-4 scroll-smooth flex flex-col gap-3
+            [&::-webkit-scrollbar]:w-1.5
+            [&::-webkit-scrollbar-track]:bg-gray-50
+            [&::-webkit-scrollbar-thumb]:bg-blue-600/80
+            [&::-webkit-scrollbar-thumb]:rounded-full
+            hover:[&::-webkit-scrollbar-thumb]:bg-blue-600">
                     <div class="flex flex-col sm:flex-row gap-6 items-center">
-                        <div class="w-full sm:w-76 h-50 shrink-0 rounded-2xl shadow-md">
-                            <img src="../assets/heroArtikel.png" alt="w-full h-full object-cover rounded-xl">
+                        <div class="w-full sm:w-76 h-56 shrink-0 bg-white p-2 border border-gray-200 rounded-2xl shadow-md">
+                            <div class="w-full h-full rounded-xl overflow-hidden">
+                                <img src="../assets/heroArtikel.png" alt="Trending Image" class="w-full h-full object-cover">
+                            </div>
                         </div>
                         <div class="flex flex-col py-2">
                             <span class="text-blue-600 bg-gray-100 text-[12px] font-semibold rounded-full px-2 py-1 w-fit mb-3">Pengabdian</span>
                             <h3 class="text-xl font-semibold leading-tight mb-3">Menanam Harapan Sehat Sejak Dini : Refleksi Hari Kanker Sedunia 4 Februari 2026 di Pulau Taliabu</h3>
-                            <p class="text-sm mb-4">Hari Kanker Sedunia yang diperingati setiap 4 Februari bukan sekadar pengingat global tentang ancaman...</p>
+                            <p class="text-sm text-gray-600 mb-4">Hari Kanker Sedunia yang diperingati setiap 4 Februari bukan sekadar pengingat global tentang ancaman...</p>
                             <a href="#" class="text-blue-600 font-bold text-sm flex items-center gap-1 hover:gap-2 transition-all">
                             Selengkapnya <span class="text-lg">→</span>
                         </a>
                         </div>
                     </div>
                     <div class="flex flex-col sm:flex-row gap-6 items-center">
-                        <div class="w-full sm:w-76 h-50 shrink-0 rounded-2xl shadow-md">
-                            <img src="../assets/heroArtikel.png" alt="w-full h-full object-cover rounded-xl">
+                        <div class="w-full sm:w-76 h-56 shrink-0 bg-white p-2 border border-gray-200 rounded-2xl shadow-md">
+                            <div class="w-full h-full rounded-xl overflow-hidden">
+                                <img src="../assets/heroArtikel.png" alt="Trending Image" class="w-full h-full object-cover">
+                            </div>
                         </div>
                         <div class="flex flex-col py-2">
                             <span class="text-blue-600 bg-gray-100 text-[12px] font-semibold rounded-full px-2 py-1 w-fit mb-3">Pengabdian</span>
                             <h3 class="text-xl font-semibold leading-tight mb-3">Menanam Harapan Sehat Sejak Dini : Refleksi Hari Kanker Sedunia 4 Februari 2026 di Pulau Taliabu</h3>
-                            <p class="text-sm mb-4">Hari Kanker Sedunia yang diperingati setiap 4 Februari bukan sekadar pengingat global tentang ancaman...</p>
+                            <p class="text-sm text-gray-600 mb-4">Hari Kanker Sedunia yang diperingati setiap 4 Februari bukan sekadar pengingat global tentang ancaman...</p>
                             <a href="#" class="text-blue-600 font-bold text-sm flex items-center gap-1 hover:gap-2 transition-all">
                             Selengkapnya <span class="text-lg">→</span>
                         </a>
                         </div>
                     </div>
                     <div class="flex flex-col sm:flex-row gap-6 items-center">
-                        <div class="w-full sm:w-76 h-50 shrink-0 rounded-2xl shadow-md">
-                            <img src="../assets/heroArtikel.png" alt="w-full h-full object-cover rounded-xl">
+                        <div class="w-full sm:w-76 h-56 shrink-0 bg-white p-2 border border-gray-200 rounded-2xl shadow-md">
+                            <div class="w-full h-full rounded-xl overflow-hidden">
+                                <img src="../assets/heroArtikel.png" alt="Trending Image" class="w-full h-full object-cover">
+                            </div>
                         </div>
                         <div class="flex flex-col py-2">
                             <span class="text-blue-600 bg-gray-100 text-[12px] font-semibold rounded-full px-2 py-1 w-fit mb-3">Pengabdian</span>
                             <h3 class="text-xl font-semibold leading-tight mb-3">Menanam Harapan Sehat Sejak Dini : Refleksi Hari Kanker Sedunia 4 Februari 2026 di Pulau Taliabu</h3>
-                            <p class="text-sm mb-4">Hari Kanker Sedunia yang diperingati setiap 4 Februari bukan sekadar pengingat global tentang ancaman...</p>
+                            <p class="text-sm text-gray-600 mb-4">Hari Kanker Sedunia yang diperingati setiap 4 Februari bukan sekadar pengingat global tentang ancaman...</p>
+                            <a href="#" class="text-blue-600 font-bold text-sm flex items-center gap-1 hover:gap-2 transition-all">
+                            Selengkapnya <span class="text-lg">→</span>
+                        </a>
+                        </div>
+                    </div>
+                    <div class="flex flex-col sm:flex-row gap-6 items-center">
+                        <div class="w-full sm:w-76 h-56 shrink-0 bg-white p-2 border border-gray-200 rounded-2xl shadow-md">
+                            <div class="w-full h-full rounded-xl overflow-hidden">
+                                <img src="../assets/heroArtikel.png" alt="Trending Image" class="w-full h-full object-cover">
+                            </div>
+                        </div>
+                        <div class="flex flex-col py-2">
+                            <span class="text-blue-600 bg-gray-100 text-[12px] font-semibold rounded-full px-2 py-1 w-fit mb-3">Pengabdian</span>
+                            <h3 class="text-xl font-semibold leading-tight mb-3">Menanam Harapan Sehat Sejak Dini : Refleksi Hari Kanker Sedunia 4 Februari 2026 di Pulau Taliabu</h3>
+                            <p class="text-sm text-gray-600 mb-4">Hari Kanker Sedunia yang diperingati setiap 4 Februari bukan sekadar pengingat global tentang ancaman...</p>
+                            <a href="#" class="text-blue-600 font-bold text-sm flex items-center gap-1 hover:gap-2 transition-all">
+                            Selengkapnya <span class="text-lg">→</span>
+                        </a>
+                        </div>
+                    </div>
+                    <div class="flex flex-col sm:flex-row gap-6 items-center">
+                        <div class="w-full sm:w-76 h-56 shrink-0 bg-white p-2 border border-gray-200 rounded-2xl shadow-md">
+                            <div class="w-full h-full rounded-xl overflow-hidden">
+                                <img src="../assets/heroArtikel.png" alt="Trending Image" class="w-full h-full object-cover">
+                            </div>
+                        </div>
+                        <div class="flex flex-col py-2">
+                            <span class="text-blue-600 bg-gray-100 text-[12px] font-semibold rounded-full px-2 py-1 w-fit mb-3">Pengabdian</span>
+                            <h3 class="text-xl font-semibold leading-tight mb-3">Menanam Harapan Sehat Sejak Dini : Refleksi Hari Kanker Sedunia 4 Februari 2026 di Pulau Taliabu</h3>
+                            <p class="text-sm text-gray-600 mb-4">Hari Kanker Sedunia yang diperingati setiap 4 Februari bukan sekadar pengingat global tentang ancaman...</p>
+                            <a href="#" class="text-blue-600 font-bold text-sm flex items-center gap-1 hover:gap-2 transition-all">
+                            Selengkapnya <span class="text-lg">→</span>
+                        </a>
+                        </div>
+                    </div>
+                    <div class="flex flex-col sm:flex-row gap-6 items-center">
+                        <div class="w-full sm:w-76 h-56 shrink-0 bg-white p-2 border border-gray-200 rounded-2xl shadow-md">
+                            <div class="w-full h-full rounded-xl overflow-hidden">
+                                <img src="../assets/heroArtikel.png" alt="Trending Image" class="w-full h-full object-cover">
+                            </div>
+                        </div>
+                        <div class="flex flex-col py-2">
+                            <span class="text-blue-600 bg-gray-100 text-[12px] font-semibold rounded-full px-2 py-1 w-fit mb-3">Pengabdian</span>
+                            <h3 class="text-xl font-semibold leading-tight mb-3">Menanam Harapan Sehat Sejak Dini : Refleksi Hari Kanker Sedunia 4 Februari 2026 di Pulau Taliabu</h3>
+                            <p class="text-sm text-gray-600 mb-4">Hari Kanker Sedunia yang diperingati setiap 4 Februari bukan sekadar pengingat global tentang ancaman...</p>
                             <a href="#" class="text-blue-600 font-bold text-sm flex items-center gap-1 hover:gap-2 transition-all">
                             Selengkapnya <span class="text-lg">→</span>
                         </a>
@@ -203,6 +260,320 @@
                     </div>
                 </div>
         </div>
+    </div>
+</section>
+
+<section class="pt-20 pb-20">
+    <div class="border-t border-gray-300 mb-10"></div>
+    <div class="max-w-7xl mx-auto px-4 md:px-12">
+        <h2 class="text-blue-900 text-3xl md:text-4xl font-bold text-center mb-10">Acara dan Kegiatan</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-[50px]">
+            <div class="pt-10">
+                <img src="../assets/poster1.png" alt="Acara 1" class="w-full h-auto object-cover">
+            </div>
+            <div class="pt-10">
+                <img src="../assets/poster2.png" alt="Acara 1" class="w-full h-auto object-cover">
+            </div>
+            <div class="pt-10">
+                <img src="../assets/poster4.png" alt="Acara 1" class="w-full h-auto object-cover">
+            </div>
+        </div>
+        <div class="mt-16 flex items-center justify-center gap-4">
+            <button class="w-10 h-10 rounded-full bg-[#3B82F6] flex items-center justify-center text-white shadow-lg transform transition active:scale-95">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                </svg>
+            </button>
+
+            <div class="flex items-center gap-2">
+                <div class="w-3.5 h-3.5 rounded-full bg-[#3B82F6]"></div>
+                <div class="w-3.5 h-3.5 rounded-full border-2 border-[#3B82F6]"></div>
+                <div class="w-3.5 h-3.5 rounded-full border-2 border-[#3B82F6]"></div>
+                <div class="w-3.5 h-3.5 rounded-full border-2 border-[#3B82F6]"></div>
+                <div class="w-3.5 h-3.5 rounded-full border-2 border-[#3B82F6]"></div>
+                <div class="w-3.5 h-3.5 rounded-full border-2 border-[#3B82F6]"></div>
+            </div>
+
+            <button class="w-10 h-10 rounded-full bg-[#3B82F6] flex items-center justify-center text-white shadow-lg transform transition active:scale-95">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                </svg>
+            </button>
+        </div>
+    </div>
+</section>
+
+<section class="pt-5 pb-20">
+    <div class="border-t border-gray-300 mb-10"></div>
+    <div class="max:w-7xl mx-auto px-4 md:px-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-10">Artikel <span class="text-blue-900">Anggota</span></h2>
+
+         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <div class="flex flex-col h-full bg-white p-4 rounded-2xl shadow-sm">
+                <div class="rounded-2xl overflow-hidden mb-4 shadow-sm aspect-video shrink-0">
+                    <img src="../assets/dummy.jpg" class="w-full h-full object-cover" alt="Kekuatan Kasih Sayang">
+                </div>
+                <div class="flex flex-col flex-grow">
+                    <div class="flex justify-between items-center mb-3">
+                        <span class="text-[#2F6FED] text-[10px] font-semibold">Dr.dr.Lucy Widasari.,MSi</span>
+                        <span class="text-gray-400 text-[10px]">12 January, 2026</span>
+                    </div>
+                    <h4 class="text-gray-900 font-bold text-lg leading-tight mb-3 h-14 line-clamp-2">
+                        Kekuatan yang Digerakkan oleh Kasih Sayang
+                    </h4>
+                    <span class="bg-[#2F6FED] text-white text-[10px] px-3 py-1 rounded-full w-fit mb-3">Kesehatan</span>
+                    <p class="text-gray-500 text-xs leading-relaxed mb-6 line-clamp-3 flex-grow">
+                        Saat Kritik Datang, di Sanalah Pemimpin Dilahirkan Mari jujur sejenak. Tidak ada pemimpin yang benar-benar nyaman saat...
+                    </p>
+                    <a href="#" class="text-[#2F6FED] text-xs font-bold flex items-center gap-2 hover:gap-3 transition-all mt-auto pt-3">
+                        Selengkapnya <span>→</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="flex flex-col h-full bg-white p-4 rounded-2xl shadow-sm">
+                <div class="rounded-2xl overflow-hidden mb-4 shadow-sm aspect-video shrink-0">
+                    <img src="../assets/Rectangle 10.png" class="w-full h-full object-cover" alt="Memimpin Dengan Hati">
+                </div>
+                <div class="flex flex-col flex-grow">
+                    <div class="flex justify-between items-center mb-3">
+                        <span class="text-[#2F6FED] text-[10px] font-semibold">Dr.dr.Lucy Widasari.,MSi</span>
+                        <span class="text-gray-400 text-[10px]">9 January, 2026</span>
+                    </div>
+                    <h4 class="text-gray-900 font-bold text-lg leading-tight mb-3 h-14 line-clamp-2">
+                        Cara Halus UPF Mengelabui Tubuh Manusia
+                    </h4>
+                    <span class="bg-[#2F6FED] text-white text-[10px] px-3 py-1 rounded-full w-fit mb-3">Kesehatan</span>
+                    <p class="text-gray-500 text-xs leading-relaxed mb-6 line-clamp-3 flex-grow">
+                        Makanan yang Membuat Kita Terus Makan, Tanpa Pernah Benar-Benar Kenyang. UPF bekerja bukan dengan satu...
+                    </p>
+                    <a href="#" class="text-[#2F6FED] text-xs font-bold flex items-center gap-2 hover:gap-3 transition-all mt-auto pt-3">
+                        Selengkapnya <span>→</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="flex flex-col h-full bg-white p-4 rounded-2xl shadow-sm">
+                <div class="rounded-2xl overflow-hidden mb-1 shadow-sm aspect-video shrink-0">
+                    <img src="../assets/noImg.png" class="w-full h-full object-cover" alt="Cara Halus UPF">
+                </div>
+                <div class="flex flex-col flex-grow">
+                    <div class="flex justify-between items-center mb-3">
+                        <span class="text-[#2F6FED] text-[10px] font-semibold">Dr.dr.Lucy Widasari.,MSi</span>
+                        <span class="text-gray-400 text-[10px]">8 January, 2026</span>
+                    </div>
+                    <h4 class="text-gray-900 font-bold text-lg leading-tight mb-3 h-14 line-clamp-2">
+                        Keyakinan Batin: Akar Kemenangan Sejati Seorang Pemimpin
+                    </h4>
+                    <span class="bg-[#2F6FED] text-white text-[10px] px-3 py-1 rounded-full w-fit mb-3">Kesehatan</span>
+                    <p class="text-gray-500 text-xs leading-relaxed mb-6 line-clamp-3 flex-grow">
+                        Dalam kajian kepemimpinan modern, keberhasilan tidak lagi ditentukan semata oleh kecerdasan intelektual, jabatan ...
+                    </p>
+                    <a href="#" class="text-[#2F6FED] text-xs font-bold flex items-center gap-2 hover:gap-3 transition-all mt-auto ">
+                        Selengkapnya <span>→</span>
+                    </a>
+                </div>
+            </div>
+            <div class="flex flex-col h-full bg-white p-4 rounded-2xl shadow-sm">
+                <div class="rounded-2xl overflow-hidden mb-1 shadow-sm aspect-video shrink-0">
+                    <img src="../assets/Rectangle 10.png" class="w-full h-full object-cover" alt="Cara Halus UPF">
+                </div>
+                <div class="flex flex-col flex-grow">
+                    <div class="flex justify-between items-center mb-3">
+                        <span class="text-[#2F6FED] text-[10px] font-semibold">Dr.dr.Lucy Widasari.,MSi</span>
+                        <span class="text-gray-400 text-[10px]">8 January, 2026</span>
+                    </div>
+                    <h4 class="text-gray-900 font-bold text-lg leading-tight mb-3 h-14 line-clamp-2">
+                        Keyakinan Batin: Akar Kemenangan Sejati Seorang Pemimpin
+                    </h4>
+                    <span class="bg-[#2F6FED] text-white text-[10px] px-3 py-1 rounded-full w-fit mb-3">Kesehatan</span>
+                    <p class="text-gray-500 text-xs leading-relaxed mb-6 line-clamp-3 flex-grow">
+                        Dalam kajian kepemimpinan modern, keberhasilan tidak lagi ditentukan semata oleh kecerdasan intelektual, jabatan ...
+                    </p>
+                    <a href="#" class="text-[#2F6FED] text-xs font-bold flex items-center gap-2 hover:gap-3 transition-all mt-auto ">
+                        Selengkapnya <span>→</span>
+                    </a>
+                </div>
+            </div>
+            <div class="flex flex-col h-full bg-white p-4 rounded-2xl shadow-sm">
+                <div class="rounded-2xl overflow-hidden mb-1 shadow-sm aspect-video shrink-0">
+                    <img src="../assets/Rectangle 10.png" class="w-full h-full object-cover" alt="Cara Halus UPF">
+                </div>
+                <div class="flex flex-col flex-grow">
+                    <div class="flex justify-between items-center mb-3">
+                        <span class="text-[#2F6FED] text-[10px] font-semibold">Dr.dr.Lucy Widasari.,MSi</span>
+                        <span class="text-gray-400 text-[10px]">8 January, 2026</span>
+                    </div>
+                    <h4 class="text-gray-900 font-bold text-lg leading-tight mb-3 h-14 line-clamp-2">
+                        Keyakinan Batin: Akar Kemenangan Sejati Seorang Pemimpin
+                    </h4>
+                    <span class="bg-[#2F6FED] text-white text-[10px] px-3 py-1 rounded-full w-fit mb-3">Kesehatan</span>
+                    <p class="text-gray-500 text-xs leading-relaxed mb-6 line-clamp-3 flex-grow">
+                        Dalam kajian kepemimpinan modern, keberhasilan tidak lagi ditentukan semata oleh kecerdasan intelektual, jabatan ...
+                    </p>
+                    <a href="#" class="text-[#2F6FED] text-xs font-bold flex items-center gap-2 hover:gap-3 transition-all mt-auto ">
+                        Selengkapnya <span>→</span>
+                    </a>
+                </div>
+            </div>
+                <div class="flex flex-col h-full bg-white p-4 rounded-2xl shadow-sm">
+                    <div class="rounded-2xl overflow-hidden mb-1 shadow-sm aspect-video shrink-0">
+                        <img src="../assets/Rectangle 10.png" class="w-full h-full object-cover" alt="Cara Halus UPF">
+                    </div>
+                    <div class="flex flex-col flex-grow">
+                        <div class="flex justify-between items-center mb-3">
+                            <span class="text-[#2F6FED] text-[10px] font-semibold">Dr.dr.Lucy Widasari.,MSi</span>
+                            <span class="text-gray-400 text-[10px]">8 January, 2026</span>
+                        </div>
+                        <h4 class="text-gray-900 font-bold text-lg leading-tight mb-3 h-14 line-clamp-2">
+                            Keyakinan Batin: Akar Kemenangan Sejati Seorang Pemimpin
+                        </h4>
+                        <span class="bg-[#2F6FED] text-white text-[10px] px-3 py-1 rounded-full w-fit mb-3">Kesehatan</span>
+                        <p class="text-gray-500 text-xs leading-relaxed mb-6 line-clamp-3 flex-grow">
+                            Dalam kajian kepemimpinan modern, keberhasilan tidak lagi ditentukan semata oleh kecerdasan intelektual, jabatan ...
+                        </p>
+                        <a href="#" class="text-[#2F6FED] text-xs font-bold flex items-center gap-2 hover:gap-3 transition-all mt-auto ">
+                            Selengkapnya <span>→</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="flex flex-col h-full bg-white p-4 rounded-2xl shadow-sm">
+                    <div class="rounded-2xl overflow-hidden mb-1 shadow-sm aspect-video shrink-0">
+                        <img src="../assets/Rectangle 10.png" class="w-full h-full object-cover" alt="Cara Halus UPF">
+                    </div>
+                    <div class="flex flex-col flex-grow">
+                        <div class="flex justify-between items-center mb-3">
+                            <span class="text-[#2F6FED] text-[10px] font-semibold">Dr.dr.Lucy Widasari.,MSi</span>
+                            <span class="text-gray-400 text-[10px]">8 January, 2026</span>
+                        </div>
+                        <h4 class="text-gray-900 font-bold text-lg leading-tight mb-3 h-14 line-clamp-2">
+                            Keyakinan Batin: Akar Kemenangan Sejati Seorang Pemimpin
+                        </h4>
+                        <span class="bg-[#2F6FED] text-white text-[10px] px-3 py-1 rounded-full w-fit mb-3">Kesehatan</span>
+                        <p class="text-gray-500 text-xs leading-relaxed mb-6 line-clamp-3 flex-grow">
+                            Dalam kajian kepemimpinan modern, keberhasilan tidak lagi ditentukan semata oleh kecerdasan intelektual, jabatan ...
+                        </p>
+                        <a href="#" class="text-[#2F6FED] text-xs font-bold flex items-center gap-2 hover:gap-3 transition-all mt-auto ">
+                            Selengkapnya <span>→</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="flex flex-col h-full bg-white p-4 rounded-2xl shadow-sm">
+                    <div class="rounded-2xl overflow-hidden mb-1 shadow-sm aspect-video shrink-0">
+                        <img src="../assets/Rectangle 10.png" class="w-full h-full object-cover" alt="Cara Halus UPF">
+                    </div>
+                    <div class="flex flex-col flex-grow">
+                        <div class="flex justify-between items-center mb-3">
+                            <span class="text-[#2F6FED] text-[10px] font-semibold">Dr.dr.Lucy Widasari.,MSi</span>
+                            <span class="text-gray-400 text-[10px]">8 January, 2026</span>
+                        </div>
+                        <h4 class="text-gray-900 font-bold text-lg leading-tight mb-3 h-14 line-clamp-2">
+                            Keyakinan Batin: Akar Kemenangan Sejati Seorang Pemimpin
+                        </h4>
+                        <span class="bg-[#2F6FED] text-white text-[10px] px-3 py-1 rounded-full w-fit mb-3">Kesehatan</span>
+                        <p class="text-gray-500 text-xs leading-relaxed mb-6 line-clamp-3 flex-grow">
+                            Dalam kajian kepemimpinan modern, keberhasilan tidak lagi ditentukan semata oleh kecerdasan intelektual, jabatan ...
+                        </p>
+                        <a href="#" class="text-[#2F6FED] text-xs font-bold flex items-center gap-2 hover:gap-3 transition-all mt-auto ">
+                            Selengkapnya <span>→</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="flex flex-col h-full bg-white p-4 rounded-2xl shadow-sm">
+                    <div class="rounded-2xl overflow-hidden mb-1 shadow-sm aspect-video shrink-0">
+                        <img src="../assets/Rectangle 10.png" class="w-full h-full object-cover" alt="Cara Halus UPF">
+                    </div>
+                    <div class="flex flex-col flex-grow">
+                        <div class="flex justify-between items-center mb-3">
+                            <span class="text-[#2F6FED] text-[10px] font-semibold">Dr.dr.Lucy Widasari.,MSi</span>
+                            <span class="text-gray-400 text-[10px]">8 January, 2026</span>
+                        </div>
+                        <h4 class="text-gray-900 font-bold text-lg leading-tight mb-3 h-14 line-clamp-2">
+                            Keyakinan Batin: Akar Kemenangan Sejati Seorang Pemimpin
+                        </h4>
+                        <span class="bg-[#2F6FED] text-white text-[10px] px-3 py-1 rounded-full w-fit mb-3">Kesehatan</span>
+                        <p class="text-gray-500 text-xs leading-relaxed mb-6 line-clamp-3 flex-grow">
+                            Dalam kajian kepemimpinan modern, keberhasilan tidak lagi ditentukan semata oleh kecerdasan intelektual, jabatan ...
+                        </p>
+                        <a href="#" class="text-[#2F6FED] text-xs font-bold flex items-center gap-2 hover:gap-3 transition-all mt-auto ">
+                            Selengkapnya <span>→</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="flex flex-col h-full bg-white p-4 rounded-2xl shadow-sm">
+                    <div class="rounded-2xl overflow-hidden mb-1 shadow-sm aspect-video shrink-0">
+                        <img src="../assets/Rectangle 10.png" class="w-full h-full object-cover" alt="Cara Halus UPF">
+                    </div>
+                    <div class="flex flex-col flex-grow">
+                        <div class="flex justify-between items-center mb-3">
+                            <span class="text-[#2F6FED] text-[10px] font-semibold">Dr.dr.Lucy Widasari.,MSi</span>
+                            <span class="text-gray-400 text-[10px]">8 January, 2026</span>
+                        </div>
+                        <h4 class="text-gray-900 font-bold text-lg leading-tight mb-3 h-14 line-clamp-2">
+                            Keyakinan Batin: Akar Kemenangan Sejati Seorang Pemimpin
+                        </h4>
+                        <span class="bg-[#2F6FED] text-white text-[10px] px-3 py-1 rounded-full w-fit mb-3">Kesehatan</span>
+                        <p class="text-gray-500 text-xs leading-relaxed mb-6 line-clamp-3 flex-grow">
+                            Dalam kajian kepemimpinan modern, keberhasilan tidak lagi ditentukan semata oleh kecerdasan intelektual, jabatan ...
+                        </p>
+                        <a href="#" class="text-[#2F6FED] text-xs font-bold flex items-center gap-2 hover:gap-3 transition-all mt-auto ">
+                            Selengkapnya <span>→</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="flex flex-col h-full bg-white p-4 rounded-2xl shadow-sm">
+                    <div class="rounded-2xl overflow-hidden mb-1 shadow-sm aspect-video shrink-0">
+                        <img src="../assets/Rectangle 10.png" class="w-full h-full object-cover" alt="Cara Halus UPF">
+                    </div>
+                    <div class="flex flex-col flex-grow">
+                        <div class="flex justify-between items-center mb-3">
+                            <span class="text-[#2F6FED] text-[10px] font-semibold">Dr.dr.Lucy Widasari.,MSi</span>
+                            <span class="text-gray-400 text-[10px]">8 January, 2026</span>
+                        </div>
+                        <h4 class="text-gray-900 font-bold text-lg leading-tight mb-3 h-14 line-clamp-2">
+                            Keyakinan Batin: Akar Kemenangan Sejati Seorang Pemimpin
+                        </h4>
+                        <span class="bg-[#2F6FED] text-white text-[10px] px-3 py-1 rounded-full w-fit mb-3">Kesehatan</span>
+                        <p class="text-gray-500 text-xs leading-relaxed mb-6 line-clamp-3 flex-grow">
+                            Dalam kajian kepemimpinan modern, keberhasilan tidak lagi ditentukan semata oleh kecerdasan intelektual, jabatan ...
+                        </p>
+                        <a href="#" class="text-[#2F6FED] text-xs font-bold flex items-center gap-2 hover:gap-3 transition-all mt-auto ">
+                            Selengkapnya <span>→</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="flex flex-col h-full bg-white p-4 rounded-2xl shadow-sm">
+                    <div class="rounded-2xl overflow-hidden mb-1 shadow-sm aspect-video shrink-0">
+                        <img src="../assets/Rectangle 10.png" class="w-full h-full object-cover" alt="Cara Halus UPF">
+                    </div>
+                    <div class="flex flex-col flex-grow">
+                        <div class="flex justify-between items-center mb-3">
+                            <span class="text-[#2F6FED] text-[10px] font-semibold">Dr.dr.Lucy Widasari.,MSi</span>
+                            <span class="text-gray-400 text-[10px]">8 January, 2026</span>
+                        </div>
+                        <h4 class="text-gray-900 font-bold text-lg leading-tight mb-3 h-14 line-clamp-2">
+                            Keyakinan Batin: Akar Kemenangan Sejati Seorang Pemimpin
+                        </h4>
+                        <span class="bg-[#2F6FED] text-white text-[10px] px-3 py-1 rounded-full w-fit mb-3">Kesehatan</span>
+                        <p class="text-gray-500 text-xs leading-relaxed mb-6 line-clamp-3 flex-grow">
+                            Dalam kajian kepemimpinan modern, keberhasilan tidak lagi ditentukan semata oleh kecerdasan intelektual, jabatan ...
+                        </p>
+                        <a href="#" class="text-[#2F6FED] text-xs font-bold flex items-center gap-2 hover:gap-3 transition-all mt-auto ">
+                            Selengkapnya <span>→</span>
+                        </a>
+                    </div>
+                </div>
+        </div>
+        <div class="flex justify-center mt-12">
+    <a href="mainallartikel.html" class="text-lg hover:text-blue-400 flex items-center gap-1 group">
+        Lihat artikel lebih banyak
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-4 transition-transform group-hover:translate-x-1">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+        </svg>
+    </a>
+</div>
     </div>
 </section>
     <div id="footer-placeholder"></div>

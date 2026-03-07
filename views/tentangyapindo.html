@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="../css/style.css" rel="stylesheet">
+</head>
+<body>
+    <div id="nav-placeholder" class="sticky top-0 z-50"></div>
+    <section>
+        <div class="">
+
+        </div>
+    </section>
+    <div id="footer-placeholder"></div>
+
+     <script src="../js/language.js"></script>
+    <script src="../js/navbar.js"></script>
+
+    <script>
+        function loadComponent(id, path) {
+            fetch(path)
+                .then(response => response.text())
+                .then(data => {
+                    const element = document.getElementById(id);
+                    if (element) {
+                        element.innerHTML = data;
+
+                        if (id === 'nav-placeholder') {
+                            if (typeof initNavbar === 'function') initNavbar();
+                            
+                            if (typeof initLanguage === 'function') {
+                                initLanguage();
+                                const savedLang = localStorage.getItem('selectedLang');
+                                if(savedLang) {
+                                    const currentLangEl = document.getElementById('currentLang');
+                                    if(currentLangEl) currentLangEl.innerText = savedLang;
+                                }
+                            }
+                        }
+                    }
+                })
+                .catch(err => console.error('Gagal memuat komponen:', err));
+        }
+
+        loadComponent('nav-placeholder', '../components/navbar.html');
+        loadComponent('footer-placeholder', '../components/footer.html');
+    </script>
+</body>
+</html>
