@@ -14,60 +14,206 @@
             <h2 class="text-2xl md:text-4xl font-bold mb-10 -mt-11"><span class="text-blue-900">Direkomendasikan </span>Untuk Anda
             </h2>
 
-            <div class="flex flex-col md:flex-row gap-12 items-center">
-                <div class="w-full md:w-[53%]">
-                    <div class="bg-white p-4 md:p-4 border border-gray-400 rounded-[20px] shadow-xl">
-                        <div class="rounded-[20px] overflow-hidden">
-                            <img src="../assets/heroArtikel.png" alt="object img kiri" class="w-full h-auto object-cover">
+            <!-- Slider Wrapper -->
+            <div class="relative group">
+                <div id="slider-track-artikel" class="flex overflow-x-auto snap-x snap-mandatory no-scrollbar scroll-smooth w-full" style="scrollbar-width: none; -ms-overflow-style: none;">
+                    
+                    <!-- Slide 1 -->
+                    <div data-index="0" class="card-artikel-item shrink-0 w-full flex flex-col md:flex-row gap-12 items-center snap-center">
+                        <div class="w-full md:w-[53%] py-4">
+                            <div class="bg-white p-4 border border-gray-400 rounded-[20px] shadow-xl">
+                                <div class="rounded-[20px] overflow-hidden">
+                                    <img src="../assets/heroArtikel.png" alt="Artikel 1" class="w-full h-auto object-cover">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-full md:w-[55%] flex flex-col">
+                            <div class="flex items-center gap-4 mb-6">
+                                <div class="flex items-center gap-3 bg-gray-100 p-2 pr-5 rounded-full shadow-inner">
+                                    <span class="bg-[#2B63E1] text-white text-[10px] md:text-xs font-semibold px-5 py-1.5 rounded-full shadow-sm">Baru!</span>
+                                    <span class="text-gray-500 text-xs font-medium">4 Februari 2026</span>
+                                </div>
+                                <span class="bg-[#FACC15] text-white text-[10px] md:text-[13px] font-semibold tracking-wider px-6 py-2 rounded-full shadow-sm">Pengabdian</span>
+                            </div>  
+                            <h3 class="text-3xl md:text-4xl font-bold tracking-wide mb-6">Menanam Harapan Sehat Sejak Dini : Refleksi Hari Kanker Sedunia 4 Februari 2026 di Pulau Taliabu</h3>
+                            <p class="text-sm md:text-sm leading-4 mb-8">Hari Kanker Sedunia yang diperingati setiap 4 Februari bukan sekadar pengingat global tentang ancaman penyakit, melainkan sebuah ajakan moral bagi setiap daerah untuk melindungi generasi masa depannya. Dunia kesehatan sepakat bahwa sebagian besar......</p>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center gap-3">
+                                    <img src="../assets/avatardrLucy.png" alt="avatar" class="w-12 h-12 rounded-full object-cover">
+                                    <span class="text-sm">Dr.dr.Lucy Widasari.,MSi</span>
+                                </div>
+                                <a href="artikeldetail.html" class="text-blue-500 font-semibold mt-20 mr-10 md:mt-20 text-lg items-center gap-2 hover:translate-x-1 transition-transform">Selengkapnya <span class="text-xl">→</span> </a>
+                            </div>
                         </div>
                     </div>
-                </div>
-            
 
-             <div class="w-full md:w-[55%] flex flex-col">
-                <div class="flex items-center gap-4 mb-6">
-                    <div class="flex items-center gap-3 bg-gray-100 p-2 pr-5 rounded-full shadow-inner">
-                        <span class="bg-[#2B63E1] text-white text-[10px] md:text-xs font-semibold px-5 py-1.5 rounded-full shadow-sm">Baru!</span>
-                        <span class="text-gray-500 text-xs font-medium">4 Februari 2026</span>
+                    <!-- Slide 2 -->
+                    <div data-index="1" class="card-artikel-item shrink-0 w-full flex flex-col md:flex-row gap-12 items-center snap-center">
+                        <div class="w-full md:w-[53%] py-4">
+                            <div class="bg-white p-4 border border-gray-400 rounded-[20px] shadow-xl">
+                                <div class="rounded-[20px] overflow-hidden">
+                                    <img src="../assets/Rectangle 55 (2).png" alt="Artikel 2" class="w-full h-auto object-cover">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-full md:w-[55%] flex flex-col">
+                            <div class="flex items-center gap-4 mb-6">
+                                <div class="flex items-center gap-3 bg-gray-100 p-2 pr-5 rounded-full shadow-inner">
+                                    <span class="bg-[#2B63E1] text-white text-[10px] md:text-xs font-semibold px-5 py-1.5 rounded-full shadow-sm">Baru!</span>
+                                    <span class="text-gray-500 text-xs font-medium">5 Februari 2026</span>
+                                </div>
+                                <span class="bg-[#2B63E1] text-white text-[10px] md:text-[13px] font-semibold tracking-wider px-6 py-2 rounded-full shadow-sm">Penelitian</span>
+                            </div>
+                            <h3 class="text-3xl md:text-4xl font-bold tracking-wide mb-6">Pentingnya Nutrisi Bagi Tumbuh Kembang Anak di Masa Golden Age</h3>
+                            <p class="text-sm md:text-sm leading-4 mb-8">Masa seribu hari pertama kehidupan merupakan periode kritis yang menentukan kualitas kesehatan manusia di masa depan. Pemenuhan gizi yang tepat...</p>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center gap-3">
+                                    <img src="../assets/avatardrLucy.png" alt="avatar" class="w-12 h-12 rounded-full object-cover">
+                                    <span class="text-sm">Dr.dr.Lucy Widasari.,MSi</span>
+                                </div>
+                                <a href="artikeldetail.html" class="text-blue-500 font-semibold mt-20 mr-10 md:mt-20 text-lg items-center gap-2 hover:translate-x-1 transition-transform">Selengkapnya <span class="text-xl">→</span> </a>
+                            </div>
+                        </div>
                     </div>
-                    <span class="bg-[#FACC15] text-white text-[10px] md:text-[13px] font-semibold tracking-wider px-6 py-2 rounded-full shadow-sm">Pengabdian</span>
-                </div>
-                <h3 class="text-3xl md:text-4xl font-bold tracing-wide mb-6">Menanam Harapan Sehat Sejak Dini : Refleksi Hari Kanker Sedunia 4 Februari 2026 di Pulau Taliabu</h3>
-                
-                <p class="text-sm md:text-sm leading-4 mb-8">Hari Kanker Sedunia yang diperingati setiap 4 Februari bukan sekadar pengingat global tentang ancaman penyakit, melainkan sebuah ajakan moral bagi setiap daerah untuk melindungi generasi masa depannya. Dunia kesehatan sepakat bahwa sebagian besar......</p>
 
-                <div class="flex items-center justify-between">
-                    <div class="flex items-center gap-3">
-                        <img src="../assets/avatardrLucy.png" alt="avatar dr lucy" class="w-12 h-12 rounded-full object-cover">
-                        <span class="text-sm">Dr.dr.Lucy Widasari.,MSi</span>
+                    <!-- Slide 3 -->
+                    <div data-index="2" class="card-artikel-item shrink-0 w-full flex flex-col md:flex-row gap-12 items-center snap-center">
+                        <div class="w-full md:w-[53%] py-4">
+                            <div class="bg-white p-4 border border-gray-400 rounded-[20px] shadow-xl">
+                                <div class="rounded-[20px] overflow-hidden">
+                                    <img src="../assets/Rectangle 55 (3).png" alt="Artikel 3" class="w-full h-auto object-cover">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-full md:w-[55%] flex flex-col">
+                            <div class="flex items-center gap-4 mb-6">
+                                <div class="flex items-center gap-3 bg-gray-100 p-2 pr-5 rounded-full shadow-inner">
+                                    <span class="bg-[#2B63E1] text-white text-[10px] md:text-xs font-semibold px-5 py-1.5 rounded-full shadow-sm">Baru!</span>
+                                    <span class="text-gray-500 text-xs font-medium">6 Februari 2026</span>
+                                </div>
+                                <span class="bg-[#14B8A6] text-white text-[10px] md:text-[13px] font-semibold tracking-wider px-6 py-2 rounded-full shadow-sm">Inovasi</span>
+                            </div>
+                            <h3 class="text-3xl md:text-4xl font-bold tracking-wide mb-6">Inovasi Teknologi Pendidikan di Era Digital: Peluang dan Tantangan</h3>
+                            <p class="text-sm md:text-sm leading-4 mb-8">Transformasi digital telah merubah cara kita belajar dan mengajar. Penggunaan platform kolaboratif menjadi salah satu solusi kunci...</p>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center gap-3">
+                                    <img src="../assets/avatardrLucy.png" alt="avatar" class="w-12 h-12 rounded-full object-cover">
+                                    <span class="text-sm">Dr.dr.Lucy Widasari.,MSi</span>
+                                </div>
+                                <a href="artikeldetail.html" class="text-blue-500 font-semibold mt-20 mr-10 md:mt-20 text-lg items-center gap-2 hover:translate-x-1 transition-transform">Selengkapnya <span class="text-xl">→</span> </a>
+                            </div>
+                        </div>
                     </div>
-                    <a href="artikeldetail.html" class="text-blue-500 font-semibold mt-20 mr-20 text-lg items-center gap-2 hover:translate-x-1 transition-transform">Selengkapnya <span class="text-xl">→</span> </a>
+
+                    <!-- Slide 4 -->
+                    <div data-index="3" class="card-artikel-item shrink-0 w-full flex flex-col md:flex-row gap-12 items-center snap-center">
+                        <div class="w-full md:w-[53%] py-4">
+                            <div class="bg-white p-4 border border-gray-400 rounded-[20px] shadow-xl">
+                                <div class="rounded-[20px] overflow-hidden">
+                                    <img src="../assets/Rectangle 55 (4).png" alt="Artikel 4" class="w-full h-auto object-cover">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-full md:w-[55%] flex flex-col">
+                            <div class="flex items-center gap-4 mb-6">
+                                <div class="flex items-center gap-3 bg-gray-100 p-2 pr-5 rounded-full shadow-inner">
+                                    <span class="bg-[#2B63E1] text-white text-[10px] md:text-xs font-semibold px-5 py-1.5 rounded-full shadow-sm">Baru!</span>
+                                    <span class="text-gray-500 text-xs font-medium">7 Februari 2026</span>
+                                </div>
+                                <span class="bg-[#F97316] text-white text-[10px] md:text-[13px] font-semibold tracking-wider px-6 py-2 rounded-full shadow-sm">Kesehatan</span>
+                            </div>
+                            <h3 class="text-3xl md:text-4xl font-bold tracking-wide mb-6">Mengenali Gejala Dini Kanker pada Anak untuk Penanganan Lebih Cepat</h3>
+                            <p class="text-sm md:text-sm leading-4 mb-8">Deteksi dini merupakan kunci utama dalam meningkatkan peluang kesembuhan pasien kanker. Orang tua perlu waspada...</p>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center gap-3">
+                                    <img src="../assets/avatardrLucy.png" alt="avatar" class="w-12 h-12 rounded-full object-cover">
+                                    <span class="text-sm">Dr.dr.Lucy Widasari.,MSi</span>
+                                </div>
+                                <a href="artikeldetail.html" class="text-blue-500 font-semibold mt-20 mr-10 md:mt-20 text-lg items-center gap-2 hover:translate-x-1 transition-transform">Selengkapnya <span class="text-xl">→</span> </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 5 -->
+                    <div data-index="4" class="card-artikel-item shrink-0 w-full flex flex-col md:flex-row gap-12 items-center snap-center">
+                        <div class="w-full md:w-[53%] py-4">
+                            <div class="bg-white p-4 border border-gray-400 rounded-[20px] shadow-xl">
+                                <div class="rounded-[20px] overflow-hidden">
+                                    <img src="../assets/Rectangle 55 (5).png" alt="Artikel 5" class="w-full h-auto object-cover">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-full md:w-[55%] flex flex-col">
+                            <div class="flex items-center gap-4 mb-6">
+                                <div class="flex items-center gap-3 bg-gray-100 p-2 pr-5 rounded-full shadow-inner">
+                                    <span class="bg-[#2B63E1] text-white text-[10px] md:text-xs font-semibold px-5 py-1.5 rounded-full shadow-sm">Baru!</span>
+                                    <span class="text-gray-500 text-xs font-medium">8 Februari 2026</span>
+                                </div>
+                                <span class="bg-[#7C3AED] text-white text-[10px] md:text-[13px] font-semibold tracking-wider px-6 py-2 rounded-full shadow-sm">Edukasi</span>
+                            </div>
+                            <h3 class="text-3xl md:text-4xl font-bold tracking-wide mb-6">Strategi Membangun Literasi Digital di Lingkungan Perpustakaan Desa</h3>
+                            <p class="text-sm md:text-sm leading-4 mb-8">Perpustakaan desa bukan hanya tempat menyimpan buku, tapi pusat pembelajaran masyarakat. Program literasi digital dapat dimulai...</p>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center gap-3">
+                                    <img src="../assets/avatardrLucy.png" alt="avatar" class="w-12 h-12 rounded-full object-cover">
+                                    <span class="text-sm">Dr.dr.Lucy Widasari.,MSi</span>
+                                </div>
+                                <a href="artikeldetail.html" class="text-blue-500 font-semibold mt-20 mr-10 md:mt-20 text-lg items-center gap-2 hover:translate-x-1 transition-transform">Selengkapnya <span class="text-xl">→</span> </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 6 -->
+                    <div data-index="5" class="card-artikel-item shrink-0 w-full flex flex-col md:flex-row gap-12 items-center snap-center">
+                        <div class="w-full md:w-[53%] py-4">
+                            <div class="bg-white p-4 border border-gray-400 rounded-[20px] shadow-xl">
+                                <div class="rounded-[20px] overflow-hidden">
+                                    <img src="../assets/Rectangle 55 (6).png" alt="Artikel 6" class="w-full h-auto object-cover">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-full md:w-[55%] flex flex-col">
+                            <div class="flex items-center gap-4 mb-6">
+                                <div class="flex items-center gap-3 bg-gray-100 p-2 pr-5 rounded-full shadow-inner">
+                                    <span class="bg-[#2B63E1] text-white text-[10px] md:text-xs font-semibold px-5 py-1.5 rounded-full shadow-sm">Baru!</span>
+                                    <span class="text-gray-500 text-xs font-medium">9 Februari 2026</span>
+                                </div>
+                                <span class="bg-[#EF4444] text-white text-[10px] md:text-[13px] font-semibold tracking-wider px-6 py-2 rounded-full shadow-sm">Sosial</span>
+                            </div>
+                            <h3 class="text-3xl md:text-4xl font-bold tracking-wide mb-6">Kolaborasi Lintas Sektor dalam Menanggulangi Stunting di Wilayah Terpencil</h3>
+                            <p class="text-sm md:text-sm leading-4 mb-8">Kerja sama antara pemerintah, akademisi, dan praktisi di lapangan menjadi syarat mutlak dalam percepatan penurunan angka stunting...</p>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center gap-3">
+                                    <img src="../assets/avatardrLucy.png" alt="avatar" class="w-12 h-12 rounded-full object-cover">
+                                    <span class="text-sm">Dr.dr.Lucy Widasari.,MSi</span>
+                                </div>
+                                <a href="artikeldetail.html" class="text-blue-500 font-semibold mt-20 mr-10 md:mt-20 text-lg items-center gap-2 hover:translate-x-1 transition-transform">Selengkapnya <span class="text-xl">→</span> </a>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
-             </div>
-            </div>
-            
-            <div class="mt-16 flex items-center justify-center gap-4">
-            <button class="w-10 h-10 rounded-full bg-[#3B82F6] flex items-center justify-center text-white shadow-lg transform transition active:scale-95">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-                </svg>
-            </button>
 
-            <div class="flex items-center gap-2">
-                <div class="w-3.5 h-3.5 rounded-full bg-[#3B82F6]"></div>
-                <div class="w-3.5 h-3.5 rounded-full border-2 border-[#3B82F6]"></div>
-                <div class="w-3.5 h-3.5 rounded-full border-2 border-[#3B82F6]"></div>
-                <div class="w-3.5 h-3.5 rounded-full border-2 border-[#3B82F6]"></div>
-                <div class="w-3.5 h-3.5 rounded-full border-2 border-[#3B82F6]"></div>
-                <div class="w-3.5 h-3.5 rounded-full border-2 border-[#3B82F6]"></div>
+                <!-- Slider Navigation -->
+                <div class="mt-16 flex items-center justify-center gap-6">
+                    <button onclick="prevSlideArt()" class="w-10 h-10 rounded-full bg-[#3B82F6] flex items-center justify-center text-white shadow-lg hover:bg-blue-700 transition active:scale-95">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                        </svg>
+                    </button>
+
+                    <div class="flex items-center gap-3" id="dots-container-artikel">
+                        <!-- Dots will be generated via JS -->
+                    </div>
+
+                    <button onclick="nextSlideArt()" class="w-10 h-10 rounded-full bg-[#3B82F6] flex items-center justify-center text-white shadow-lg hover:bg-blue-700 transition active:scale-95">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </button>
+                </div>
             </div>
 
-            <button class="w-10 h-10 rounded-full bg-[#3B82F6] flex items-center justify-center text-white shadow-lg transform transition active:scale-95">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                </svg>
-            </button>
-        </div>
     </div>
     </section>
 
@@ -76,7 +222,7 @@
         <div class="border-t border-gray-300 mb-16"></div>
         <div class="text-center mb-10">
             <h2 class="text-3xl font-bold">Artikel <span class="text-blue-900 text-3xl font-bold mt-2">Terbaru</span></h2>
-        </div>
+        </div>x
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             
@@ -609,6 +755,89 @@
 
     loadComponent('nav-placeholder', '../components/navbar.html');
     loadComponent('footer-placeholder', '../components/footer.html');
+
+    // --- INFINITE SLIDER LOGIC FOR ARTIKEL ---
+    const trackArt = document.getElementById('slider-track-artikel');
+    const dotsContainerArt = document.getElementById('dots-container-artikel');
+    const TOTAL_ART_CARDS = 6;
+    let isJumpingArt = false;
+
+    // 1. Initialize Dots
+    if (dotsContainerArt) {
+        for (let i = 0; i < TOTAL_ART_CARDS; i++) {
+            const dot = document.createElement('span');
+            dot.className = `dot-art w-3.5 h-3.5 rounded-full border-2 border-[#3B82F6] cursor-pointer transition-all duration-300`;
+            dot.onclick = () => slideToArt(i);
+            dotsContainerArt.appendChild(dot);
+        }
+    }
+
+    function updateDotsArt(activeIndex) {
+        const dots = document.querySelectorAll('.dot-art');
+        const normalizedIndex = activeIndex % TOTAL_ART_CARDS;
+        dots.forEach((dot, i) => {
+            if (i === normalizedIndex) {
+                dot.className = "dot-art w-8 h-3.5 bg-[#3B82F6] rounded-full cursor-pointer transition-all duration-300";
+            } else {
+                dot.className = "dot-art w-3.5 h-3.5 rounded-full border-2 border-[#3B82F6] cursor-pointer transition-all duration-300";
+            }
+        });
+    }
+
+    // 2. Clone for Infinite Effect
+    window.addEventListener('load', () => {
+        if (!trackArt) return;
+        const originalCards = Array.from(trackArt.querySelectorAll('.card-artikel-item'));
+        
+        // Clone full set twice to ensure seamless scrolling
+        originalCards.forEach(card => trackArt.appendChild(card.cloneNode(true)));
+        originalCards.slice().reverse().forEach(card => trackArt.insertBefore(card.cloneNode(true), trackArt.firstChild));
+
+        trackArt.style.scrollBehavior = 'auto';
+        setTimeout(() => {
+            trackArt.scrollLeft = trackArt.offsetWidth * TOTAL_ART_CARDS;
+            trackArt.style.scrollBehavior = 'smooth';
+            updateDotsArt(0);
+        }, 50);
+    });
+
+    // 3. Navigation Functions
+    window.nextSlideArt = function() {
+        if (trackArt) trackArt.scrollLeft += trackArt.offsetWidth;
+    }
+
+    window.prevSlideArt = function() {
+        if (trackArt) trackArt.scrollLeft -= trackArt.offsetWidth;
+    }
+
+    window.slideToArt = function(index) {
+        if (trackArt) trackArt.scrollTo({ left: (TOTAL_ART_CARDS + index) * trackArt.offsetWidth, behavior: 'smooth' });
+    }
+
+    // 4. Scroll Listener for Loop Jump
+    if (trackArt) {
+        trackArt.addEventListener('scroll', () => {
+            if (isJumpingArt) return;
+            const scrollLeft = trackArt.scrollLeft;
+            const width = trackArt.offsetWidth;
+            const activeIndex = Math.round(scrollLeft / width) - TOTAL_ART_CARDS;
+
+            updateDotsArt((activeIndex + TOTAL_ART_CARDS) % TOTAL_ART_CARDS);
+
+            // Seamles loop logic
+            if (scrollLeft >= (TOTAL_ART_CARDS * 2 - 0.2) * width) {
+                isJumpingArt = true;
+                trackArt.style.scrollBehavior = 'auto';
+                trackArt.scrollLeft = scrollLeft - (TOTAL_ART_CARDS * width);
+                setTimeout(() => { trackArt.style.scrollBehavior = 'smooth'; isJumpingArt = false; }, 50);
+            } else if (scrollLeft <= 0.2 * width) {
+                isJumpingArt = true;
+                trackArt.style.scrollBehavior = 'auto';
+                trackArt.scrollLeft = scrollLeft + (TOTAL_ART_CARDS * width);
+                setTimeout(() => { trackArt.style.scrollBehavior = 'smooth'; isJumpingArt = false; }, 50);
+            }
+        });
+    }
 </script>
 
 </body>

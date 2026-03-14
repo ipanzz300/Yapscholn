@@ -34,7 +34,7 @@
                             <img src="../assets/avatar2.png" alt="U2" class="w-10 h-10 rounded-full border border-black object-cover" />
                             <img src="../assets/avatar3.png" alt="U3" class="w-10 h-10 rounded-full border border-black object-cover" />
                         </div>
-                        <p class="text-sm font-medium ml-4 md:ml-10 leading-tight">
+                        <p class="text-sm font-medium ml-10 md:ml-10 lg:ml-10 leading-tight">
                             Lebih dari 2.000+ orang sudah bergabung dengan kami
                         </p>
                     </div>
@@ -77,7 +77,7 @@
     <section class="py-16 bg-white relative">
 
         <!-- Element Biru Pojok Kanan Atas -->
-    <div class="absolute top-[-80px] right-10 w-40 h-40 pointer-events-none mr-6">
+    <div class="hidden md:block absolute top-[-80px] right-10 w-40 h-40 pointer-events-none mr-6">
         <div class="flex gap-2.5 justify-end items-start h-full pr-0">
             <div class="w-[35px] h-[100px] bg-[#3E87F5] rounded-b-full"></div>
             <div class="w-[35px] h-[180px] bg-[#3E87F5] rounded-b-full"></div>
@@ -86,7 +86,7 @@
     </div>
 
     <!-- Element Biru Pojok Kiri Bawah -->
-    <div class="absolute bottom-0 left-0 w-40 h-40 pointer-events-none ml-6">
+    <div class="hidden md:block absolute bottom-0 left-0 w-40 h-40 pointer-events-none ml-6">
         <div class="flex gap-2.5 items-end h-full pl-0">
             <div class="w-[35px] h-[100px] bg-[#3E87F5] rounded-t-full"></div>
             <div class="w-[35px] h-[180px] bg-[#3E87F5] rounded-t-full"></div>
@@ -202,70 +202,310 @@
             </div>
         </div>
     </section>
-
-    <section class="py-24 bg-[#043873] overflow-hidden relative">
-        <div class="absolute top-0 left-0 pointer-events-none opacity-30 rotate-180">
-            <svg width="400" height="400" viewBox="0 0 600 600" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0 600C0 600 200 550 300 400C400 250 550 200 600 200" stroke="white" stroke-width="2" stroke-opacity="0.5" />
-                <path d="M50 650C50 650 250 600 350 450C450 300 600 250 650 250" stroke="white" stroke-width="2" stroke-opacity="0.3" />
-                <path d="M-50 550C-50 550 150 500 250 350C350 200 500 150 550 150" stroke="white" stroke-width="2" stroke-opacity="0.3" />
-            </svg>
+   
+   <section class="py-24 bg-[#043873] overflow-hidden relative">
+     <div class="absolute top-0 left-0 pointer-events-none z-0">
+        <img src="../assets/elementGaris.png" alt="ElementPojokKiriAtas" class="w-40 md:w-80 h-auto">
+    </div>
+    <div class="absolute inset-0 pointer-events-none z-0 flex items-center">
+            <img src="../assets/Element.png" class="w-full h-[70%] object-cover opacity-60" alt="Background Line" />
         </div>
+    <div class="max-w-7xl mx-auto px-4 relative z-10">
+        <h2 class="text-center text-blue-500 text-3xl md:text-4xl font-bold mb-16">
+            Fokus Kami <span class="font-semibold text-white"> – Yapscholin</span>
+        </h2>
 
-        <div class="absolute bottom-0 right-0 pointer-events-none opacity-30">
-            <svg width="400" height="400" viewBox="0 0 600 600" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0 600C0 600 200 550 300 400C400 250 550 200 600 200" stroke="white" stroke-width="2" stroke-opacity="0.5" />
-                <path d="M50 650C50 650 250 600 350 450C450 300 600 250 650 250" stroke="white" stroke-width="2" stroke-opacity="0.3" />
-                <path d="M-50 550C-50 550 150 500 250 350C350 200 500 150 550 150" stroke="white" stroke-width="2" stroke-opacity="0.3" />
-            </svg>
-        </div>
+        <style>
+            #slider-track {
+                padding-left: calc(50% - 140px);
+                padding-right: calc(50% - 140px);
+                scroll-padding: 0 calc(50% - 140px);
+                /* Efek fade di pinggir agar kartu tidak terpotong kasar */
+               
+            }
+            @media (min-width: 768px) {
+                #slider-track {
+                    padding-left: calc(50% - 175px);
+                    padding-right: calc(50% - 175px);
+                    scroll-padding: 0 calc(50% - 175px);
+                }
+            }
+            .no-scrollbar::-webkit-scrollbar { display: none; }
+        </style>
 
-        <div class="max-w-7xl mx-auto px-4 relative z-10">
-            <h2 class="text-center text-blue-500 text-3xl md:text-4xl font-bold mb-16">
-                Fokus Kami <span class="font-semibold text-white"> – Yapscholin</span>
-            </h2>
-
-            <div class="flex gap-8 overflow-x-auto pb-8 pt-4 snap-x snap-mandatory no-scrollbar px-4 md:px-0 justify-start md:justify-center">
-                <div class="min-w-[300px] md:w-[350px] bg-white rounded-3xl p-8 shadow-lg snap-center flex flex-col items-start transition-all hover:-translate-y-2 duration-300">
-                    <div class="w-14 h-14 rounded-full bg-blue-50 flex items-center justify-center mb-6">
-                        <img src="../assets/Vector.png" class="w-8 h-8 object-contain" alt="Icon" />
-                    </div>
-                    <h3 class="text-lg font-bold text-gray-900 mb-3">Professional & Career Development</h3>
-                    <p class="text-sm text-gray-500 leading-relaxed">
-                        Mendukung pengembangan karier anggota melalui mentoring, pelatihan, dan peluang kolaborasi.
-                    </p>
+        <div id="slider-track" class="flex gap-8 overflow-x-auto pb-12 pt-4 snap-x snap-mandatory no-scrollbar scroll-smooth" style="scrollbar-width: none; -ms-overflow-style: none;">
+            <!-- Cards will be here (handled by JS cloning) -->
+            <div data-index="0" class="card-item shrink-0 w-[280px] md:w-[350px] bg-white rounded-3xl p-8 shadow-lg snap-center flex flex-col items-start transition-all duration-300 border-2 border-transparent">
+                <div class="w-14 h-14 rounded-full bg-blue-50 flex items-center justify-center mb-6">
+                    <img src="../assets/iconGear.png" class="w-8 h-8 object-contain" alt="Icon" />
                 </div>
-
-                <div class="min-w-[300px] md:w-[350px] bg-white rounded-3xl p-8 shadow-2xl snap-center flex flex-col items-start transform md:scale-110 z-10 border-2 border-blue-400 relative">
-                    <div class="w-14 h-14 rounded-full bg-blue-50 flex items-center justify-center mb-6">
-                        <img src="../assets/Group 16.png" class="w-8 h-8 object-contain" alt="Icon" />
-                    </div>
-                    <h3 class="text-lg font-bold text-blue-600 mb-3">Interdisciplinary Collaboration</h3>
-                    <p class="text-sm text-gray-500 leading-relaxed">
-                        Mendorong kerja sama lintas disiplin antara akademisi, peneliti, dan profesional untuk menciptakan inovasi.
-                    </p>
-                </div>
-
-                <div class="min-w-[300px] md:w-[350px] bg-white rounded-3xl p-8 shadow-lg snap-center flex flex-col items-start transition-all hover:-translate-y-2 duration-300">
-                    <div class="w-14 h-14 rounded-full bg-blue-50 flex items-center justify-center mb-6">
-                        <img src="../assets/vector src.png" class="w-8 h-8 object-contain" alt="Icon" />
-                    </div>
-                    <h3 class="text-lg font-bold text-gray-900 mb-3">Research & Knowledge Sharing</h3>
-                    <p class="text-sm text-gray-500 leading-relaxed">
-                        Fasilitasi diskusi, seminar, dan publikasi untuk berbagi wawasan serta memperkaya ilmu pengetahuan.
-                    </p>
-                </div>
+                <h3 class="card-title text-lg font-bold text-gray-900 mb-3 transition-colors">Scientific & Technological Innovation</h3>
+                <p class="text-sm text-gray-500 leading-relaxed">Mendorong riset dan inovasi berbasis sains serta teknologi untuk mendukung pembangunan berkelanjutan.</p>
             </div>
 
-            <div class="flex justify-center gap-2 mt-8">
-                <span class="w-3 h-3 bg-white/30 rounded-full cursor-pointer hover:bg-white transition"></span>
-                <span class="w-8 h-3 bg-blue-400 rounded-full cursor-pointer"></span>
-                <span class="w-3 h-3 bg-white/30 rounded-full cursor-pointer hover:bg-white transition"></span>
-                <span class="w-3 h-3 bg-white/30 rounded-full cursor-pointer hover:bg-white transition"></span>
-                <span class="w-3 h-3 bg-white/30 rounded-full cursor-pointer hover:bg-white transition"></span>
+            <div data-index="1" class="card-item shrink-0 w-[280px] md:w-[350px] bg-white rounded-3xl p-8 shadow-lg snap-center flex flex-col items-start transition-all duration-300 border-2 border-transparent">
+                <div class="w-14 h-14 rounded-full bg-blue-50 flex items-center justify-center mb-6">
+                    <img src="../assets/Vector.png" class="w-8 h-8 object-contain" alt="Icon" />
+                </div>
+                <h3 class="card-title text-lg font-bold text-gray-900 mb-3 transition-colors">Professional & Career Development</h3>
+                <p class="text-sm text-gray-500 leading-relaxed">Mendukung pengembangan karier anggota melalui mentoring, pelatihan, dan peluang kolaborasi.</p>
+            </div>
+
+            <div data-index="2" class="card-item shrink-0 w-[280px] md:w-[350px] bg-white rounded-3xl p-8 shadow-lg snap-center flex flex-col items-start transition-all duration-300 border-2 border-transparent">
+                <div class="w-14 h-14 rounded-full bg-blue-50 flex items-center justify-center mb-6">
+                    <img src="../assets/Group 16.png" class="w-8 h-8 object-contain" alt="Icon" />
+                </div>
+                <h3 class="card-title text-lg font-bold text-gray-900 mb-3 transition-colors">Interdisciplinary Collaboration</h3>
+                <p class="text-sm text-gray-500 leading-relaxed">Mendorong kerja sama lintas disiplin antara akademisi, peneliti, dan profesional untuk menciptakan inovasi yang berdampak.</p>
+            </div>
+
+            <div data-index="3" class="card-item shrink-0 w-[280px] md:w-[350px] bg-white rounded-3xl p-8 shadow-lg snap-center flex flex-col items-start transition-all duration-300 border-2 border-transparent">
+                <div class="w-14 h-14 rounded-full bg-blue-50 flex items-center justify-center mb-6">
+                    <img src="../assets/vector src.png" class="w-8 h-8 object-contain" alt="Icon" />
+                </div>
+                <h3 class="card-title text-lg font-bold text-gray-900 mb-3 transition-colors">Research & Knowledge Sharing</h3>
+                <p class="text-sm text-gray-500 leading-relaxed">Fasilitasi diskusi, seminar, dan publikasi untuk berbagi wawasan serta memperkaya ilmu pengetahuan.</p>
+            </div>
+
+            <div data-index="4" class="card-item shrink-0 w-[280px] md:w-[350px] bg-white rounded-3xl p-8 shadow-lg snap-center flex flex-col items-start transition-all duration-300 border-2 border-transparent">
+                <div class="w-14 h-14 rounded-full bg-blue-50 flex items-center justify-center mb-6">
+                    <img src="../assets/iconPeople.png" class="w-8 h-8 object-contain" alt="Icon" />
+                </div>
+                <h3 class="card-title text-lg font-bold text-gray-900 mb-3 transition-colors">Community Engagement & Impact</h3>
+                <p class="text-sm text-gray-500 leading-relaxed">Berkontribusi dalam pengabdian kepada masyarakat melalui program berbasis riset dan inovasi.</p>
             </div>
         </div>
-    </section>
+
+        <div class="flex justify-center items-center gap-6 mt-4">
+            <!-- Tombol Navigasi Kiri -->
+            <button onclick="prevSlide()" class="w-10 h-10 bg-white/10 hover:bg-white/30 backdrop-blur-sm rounded-full flex items-center justify-center text-white transition-all">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 19l-7-7 7-7" />
+                </svg>
+            </button>
+
+            <!-- Dots Container -->
+            <div class="flex items-center gap-3" id="dots-container">
+                <span onclick="slideTo(0)" class="nav-dot w-3 h-3 bg-white/30 rounded-full cursor-pointer hover:bg-white transition-all duration-300"></span>
+                <span onclick="slideTo(1)" class="nav-dot w-3 h-3 bg-white/30 rounded-full cursor-pointer hover:bg-white transition-all duration-300"></span>
+                <span onclick="slideTo(2)" class="nav-dot w-3 h-3 bg-white/30 rounded-full cursor-pointer hover:bg-white transition-all duration-300"></span>
+                <span onclick="slideTo(3)" class="nav-dot w-3 h-3 bg-white/30 rounded-full cursor-pointer hover:bg-white transition-all duration-300"></span>
+                <span onclick="slideTo(4)" class="nav-dot w-3 h-3 bg-white/30 rounded-full cursor-pointer hover:bg-white transition-all duration-300"></span>
+            </div>
+
+            <!-- Tombol Navigasi Kanan -->
+            <button onclick="nextSlide()" class="w-10 h-10 bg-white/10 hover:bg-white/30 backdrop-blur-sm rounded-full flex items-center justify-center text-white transition-all">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7" />
+                </svg>
+            </button>
+        </div>
+    </div>
+</section>
+
+<script>
+    const TOTAL_REAL_CARDS = 5;
+    const CLONE_SET = 1; // We'll clone the whole set once for each side
+
+    function getPhysicalIndex(normalizedIndex) {
+        // Find the instance of the card that is currently closest to the center
+        const track = document.getElementById('slider-track');
+        const cards = Array.from(track.querySelectorAll('.card-item'));
+        const trackCenter = track.scrollLeft + (track.clientWidth / 2);
+        
+        let bestDistance = Infinity;
+        let bestPhysicalIndex = 0;
+
+        cards.forEach((card, i) => {
+            if (parseInt(card.getAttribute('data-index')) === normalizedIndex) {
+                const cardCenter = card.offsetLeft + (card.clientWidth / 2);
+                const distance = Math.abs(cardCenter - trackCenter);
+                if (distance < bestDistance) {
+                    bestDistance = distance;
+                    bestPhysicalIndex = i;
+                }
+            }
+        });
+        return bestPhysicalIndex;
+    }
+
+    function updateSliderActiveState(activeIndex) {
+        const dots = document.querySelectorAll('.nav-dot');
+        const track = document.getElementById('slider-track');
+        const cards = track.querySelectorAll('.card-item');
+
+        let normalizedIndex = activeIndex % TOTAL_REAL_CARDS;
+        if (normalizedIndex < 0) normalizedIndex += TOTAL_REAL_CARDS;
+
+        cards.forEach((card) => {
+            const cardIndex = parseInt(card.getAttribute('data-index'));
+            const title = card.querySelector('.card-title');
+            
+            if (cardIndex === normalizedIndex) {
+                 const trackCenter = track.scrollLeft + (track.clientWidth / 2);
+                 const cardCenter = card.offsetLeft + (card.clientWidth / 2);
+                 const distance = Math.abs(cardCenter - trackCenter);
+                 
+                 if (distance < 200) { 
+                    card.classList.add('border-blue-400', 'shadow-2xl');
+                    card.classList.remove('border-transparent', 'shadow-lg');
+                    if (title) title.classList.add('text-blue-600');
+                 } else {
+                    card.classList.add('border-transparent', 'shadow-lg');
+                    card.classList.remove('border-blue-400', 'shadow-2xl');
+                    if (title) title.classList.remove('text-blue-600');
+                 }
+            } else {
+                card.classList.add('border-transparent', 'shadow-lg');
+                card.classList.remove('border-blue-400', 'shadow-2xl');
+                if (title) title.classList.remove('text-blue-600');
+            }
+        });
+
+        dots.forEach((dot, i) => {
+            if (i === normalizedIndex) {
+                dot.className = "nav-dot w-8 h-3 bg-blue-400 rounded-full cursor-pointer transition-all duration-300";
+            } else {
+                dot.className = "nav-dot w-3 h-3 bg-white/30 rounded-full cursor-pointer hover:bg-white transition-all duration-300";
+            }
+        });
+    }
+
+    function slideTo(index) {
+        const track = document.getElementById('slider-track');
+        const cards = track.querySelectorAll('.card-item');
+        
+        // Target the closest physical instance of the requested card index
+        const physicalIndex = getPhysicalIndex(index);
+        const targetCard = cards[physicalIndex];
+
+        if (track && targetCard) {
+            const trackCenter = track.clientWidth / 2;
+            const cardCenter = targetCard.offsetLeft + (targetCard.clientWidth / 2);
+            track.scrollTo({ left: cardCenter - trackCenter, behavior: 'smooth' });
+        }
+    }
+
+    function nextSlide() {
+        const track = document.getElementById('slider-track');
+        const cards = track.querySelectorAll('.card-item');
+        const trackCenter = track.scrollLeft + (track.clientWidth / 2);
+        
+        let closestIdx = 0;
+        let minDist = Infinity;
+        cards.forEach((card, i) => {
+            const dist = Math.abs((card.offsetLeft + card.clientWidth/2) - trackCenter);
+            if (dist < minDist) { minDist = dist; closestIdx = i; }
+        });
+
+        if (closestIdx < cards.length - 1) {
+            const target = cards[closestIdx + 1];
+            const targetScroll = target.offsetLeft + (target.clientWidth / 2) - (track.clientWidth / 2);
+            track.scrollTo({ left: targetScroll, behavior: 'smooth' });
+        }
+    }
+
+    function prevSlide() {
+        const track = document.getElementById('slider-track');
+        const cards = track.querySelectorAll('.card-item');
+        const trackCenter = track.scrollLeft + (track.clientWidth / 2);
+        
+        let closestIdx = 0;
+        let minDist = Infinity;
+        cards.forEach((card, i) => {
+            const dist = Math.abs((card.offsetLeft + card.clientWidth/2) - trackCenter);
+            if (dist < minDist) { minDist = dist; closestIdx = i; }
+        });
+
+        if (closestIdx > 0) {
+            const target = cards[closestIdx - 1];
+            const targetScroll = target.offsetLeft + (target.clientWidth / 2) - (track.clientWidth / 2);
+            track.scrollTo({ left: targetScroll, behavior: 'smooth' });
+        }
+    }
+
+    window.addEventListener('load', () => {
+        const track = document.getElementById('slider-track');
+        const originalCards = Array.from(track.querySelectorAll('.card-item'));
+        
+        // Full set clones for perfect infinite effect
+        originalCards.forEach(card => {
+            const clone = card.cloneNode(true);
+            clone.classList.add('clone');
+            track.appendChild(clone);
+        });
+        originalCards.slice().reverse().forEach(card => {
+            const clone = card.cloneNode(true);
+            clone.classList.add('clone');
+            track.insertBefore(clone, track.firstChild);
+        });
+
+        track.style.scrollBehavior = 'auto';
+        setTimeout(() => {
+            const allCards = track.querySelectorAll('.card-item');
+            const target = allCards[TOTAL_REAL_CARDS + 2]; 
+            const trackCenter = track.clientWidth / 2;
+            const cardCenter = target.offsetLeft + (target.clientWidth / 2);
+            track.scrollLeft = cardCenter - trackCenter;
+            track.style.scrollBehavior = 'smooth';
+            updateSliderActiveState(2);
+        }, 50);
+    });
+
+    const track = document.getElementById('slider-track');
+    let scrollTimeout;
+    let isJumping = false;
+
+    track.addEventListener('scroll', () => {
+        if (isJumping) return;
+
+        const scrollLeft = track.scrollLeft;
+        const maxScroll = track.scrollWidth - track.clientWidth;
+
+        // 1. REAL-TIME DOT UPDATE (No Delay)
+        const trackCenter = scrollLeft + (track.clientWidth / 2);
+        let closestNormIndex = 0;
+        let minDistance = Infinity;
+
+        track.querySelectorAll('.card-item').forEach((card) => {
+            const cardCenter = card.offsetLeft + (card.clientWidth / 2);
+            const distance = Math.abs(cardCenter - trackCenter);
+            if (distance < minDistance) {
+                minDistance = distance;
+                closestNormIndex = parseInt(card.getAttribute('data-index'));
+            }
+        });
+
+        // Update dots immediately
+        const dots = document.querySelectorAll('.nav-dot');
+        dots.forEach((dot, i) => {
+            if (i === closestNormIndex) {
+                dot.className = "nav-dot w-8 h-3 bg-blue-400 rounded-full cursor-pointer transition-all duration-300";
+            } else {
+                dot.className = "nav-dot w-3 h-3 bg-white/30 rounded-full cursor-pointer hover:bg-white transition-all duration-300";
+            }
+        });
+
+        // 2. SEAMLESS LOOP JUMPING
+        if (scrollLeft >= maxScroll - 20) {
+            isJumping = true;
+            track.style.scrollBehavior = 'auto';
+            track.scrollLeft = scrollLeft - (TOTAL_REAL_CARDS * (350 + 32));
+            setTimeout(() => { track.style.scrollBehavior = 'smooth'; isJumping = false; }, 50);
+        } else if (scrollLeft <= 20) {
+            isJumping = true;
+            track.style.scrollBehavior = 'auto';
+            track.scrollLeft = scrollLeft + (TOTAL_REAL_CARDS * (350 + 32));
+            setTimeout(() => { track.style.scrollBehavior = 'smooth'; isJumping = false; }, 50);
+        }
+
+        // 3. DEBOUNCED CARD HIGHLIGHT (To save performance)
+        clearTimeout(scrollTimeout);
+        scrollTimeout = setTimeout(() => {
+            updateSliderActiveState(closestNormIndex);
+        }, 50);
+    });
+</script>
 
     <section class="py-20 bg-white overflow-hidden">
         <div class="max-w-7xl mx-auto px-4 md:px-12 flex flex-col lg:flex-row items-center gap-10">
