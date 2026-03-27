@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Konsultan - Yapscholn</title>
+    <link rel="icon" type="image/png" href="../assets/logo yapscholn only logo.png">
+    <!-- Tailwind CSS (Generated via CLI) -->
+    <link href="../css/style.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <div id="nav-placeholder" class="sticky top-0 z-50"></div>
+
+   <section class="relative w-full min-h-screen flex items-center justify-center py-12 px-6 lg:px-[120px] overflow-hidden">
+  
+  <div class="absolute inset-0 z-[-1] pointer-events-none">
+    <img src="../assets/shapeBlueBg.png" alt="Background Shape" class="w-full h-full object-cover object-center opacity-100"/>
+  </div>
+    <div class="relative max-w-7xl w-full flex flex-col lg:flex-row gap-12 lg:gap-24 flex items-center justify-center">
+    
+      <!-- card -->
+      <div class="w-full lg:w-auto lg:flex-shrink-0 flex justify-center lg:justify-end">
+        <div class="w-full lg:w-[550px] border-2 border-gray-300 p-8 sm:p-10 rounded-2xl shadow-md bg-white">
+          
+          <h3 class="text-xl font-bold text-center mb-8">Form Pengisian</h3>
+
+          <form class="space-y-5">
+            <div>
+  <label class="block text-lg font-semibold text-gray-700 mb-3">Tipe Penelitian <span class="text-red-500">*</span></label>
+  <div class="grid grid-cols-1 lg:grid-cols-3 gap-3 font-semibold">
+    <div>
+      <input type="radio" id="skripsi" name="tipe_penelitian" value="Skripsi" class="hidden peer" required>
+      <label for="skripsi" class="block text-center border-2 border-gray-300 py-2 px-4 rounded-xl cursor-pointer hover:bg-gray-100 hover:border-blue-500 peer-checked:border-blue-500 peer-checked:bg-blue-50 peer-checked:text-blue-700 transition-all">Skripsi</label>
+    </div>
+    
+    <div>
+      <input type="radio" id="tesis" name="tipe_penelitian" value="Tesis" class="hidden peer">
+      <label for="tesis" class="block text-center border-2 border-gray-300 py-2 px-4 rounded-xl cursor-pointer hover:bg-gray-100 hover:border-blue-500 peer-checked:border-blue-500 peer-checked:bg-blue-50 peer-checked:text-blue-700 transition-all">Tesis</label>
+    </div>
+    
+    <div>
+      <input type="radio" id="s3" name="tipe_penelitian" value="Penelitian S3" class="hidden peer">
+      <label for="s3" class="block text-center border-2 border-gray-300 py-2 px-4 rounded-xl cursor-pointer hover:bg-gray-100 hover:border-blue-500 peer-checked:border-blue-500 peer-checked:bg-blue-50 peer-checked:text-blue-700 transition-all">Penelitian S3</label>
+    </div>
+  </div>
+</div>
+
+            <div>
+  <label class="block text-lg font-semibold text-gray-700 mb-3">
+    Judul Penelitian <span class="text-red-500">*</span>
+  </label>
+  <input type="text" name="judul"placeholder="Masukkan Judul Penelitian" required class="peer w-full border border-gray-300 rounded-xl shadow-sm p-3 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all invalid:[&:not(:placeholder-shown):not(:focus)]:border-red-500">
+  <p class="mt-1 hidden peer-invalid:[&:not(:placeholder-shown):not(:focus)]:block text-sm text-red-500">
+    Judul tidak boleh kosong.
+  </p>
+</div>
+            <div>
+              <label class="block text-lg font-semibold text-gray-700 mb-3">Abstrak
+                <span class="text-red-500">*</span>
+              </label>
+              <input type="text" placeholder="Abstrak" required class="w-full border border-gray-300 rounded-xl shadow-sm p-3 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all">
+            </div>
+            <div>
+              <label class="block text-lg font-semibold text-gray-700 mb-3">Nama Lengkap
+                <span class="text-red-500">*</span>
+              </label>
+              <input type="text" placeholder="Nama Lengkap" required class="w-full border border-gray-300 rounded-xl shadow-sm p-3 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all">
+            </div>
+            <div>
+              <label class="block text-lg font-semibold text-gray-700 mb-3">No Handphone
+                <span class="text-red-500">*</span>
+              </label>
+              <input type="text" placeholder="Nomor Handphone" required class="w-full border border-gray-300 rounded-xl shadow-sm p-3 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all">
+            </div>
+            <div>
+              <label class="block text-lg font-semibold text-gray-700 mb-3">Asal Kampus
+                <span class="text-red-500">*</span>
+              </label>
+              <select class="w-full border border-gray-300 rounded-xl shadow-sm p-3">
+                <option value="" disabled selected>Asal Kampus</option>
+                <option value="kampus1">Lorem Ipsum</option>
+                <option value="kampus2">Lorem Ipsum</option>
+                <option value="kampus3">Lorem Ipsum</option>
+                <option value="kampus4">Lorem Ipsum</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-lg font-semibold text-gray-700 mb-3">Prodi
+                <span class="text-red-500">*</span>
+              </label>
+              <select class="w-full border border-gray-300 rounded-xl shadow-sm p-3">
+                <option value="" disabled selected>Prodi</option>
+                <option value="prodi1">Lorem Ipsum</option>
+                <option value="prodi2">Lorem Ipsum</option>
+                <option value="prodi3">Lorem Ipsum</option>
+                <option value="prodi4">Lorem Ipsum</option>
+              </select>
+            </div>
+
+            <div>
+            <label class="block text-lg font-semibold text-gray-700 mb-3">Metode Bimbingan <span class="text-red-500">*</span></label>
+            <div class="grid grid-cols-2 gap-3 font-semibold">
+              <button class="border-2 border-gray-300 py-3 px-6 rounded-xl hover:bg-gray-100 hover:border-blue-500 transition-all">Offline</button>
+              <button class="border-2 border-gray-300 py-3 px-6 rounded-xl hover:bg-gray-100 hover:border-blue-500 transition-all">Online</button>
+            </div>
+            </div>
+
+            <div>
+              <label class="block text-sm font-medium text-gray-700 mb-1">Alamat  <span class="text-red-500">*</span></label>
+              <textarea rows="3" placeholder="Alamat" class="w-full border border-gray-300 rounded-lg p-3 text-sm text-gray-900 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all resize-none shadow-sm"></textarea>
+            </div>
+
+            <div>
+              <button class="w-full bg-[#4F8BFF] hover:bg-blue-800 transition-all text-white font-semibold py-3 rounded-xl">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+   </section>
+
+   
+    
+    <div id="footer-placeholder"></div>
+
+    <script src="../js/language.js"></script>
+    <script src="../js/navbar.js"></script>
+
+    <script>
+      function loadComponent(id, path) {
+        fetch(path)
+          .then((response) => response.text())
+          .then((data) => {
+            const element = document.getElementById(id);
+            if (element) {
+              element.innerHTML = data;
+
+              if (id === "nav-placeholder") {
+                if (typeof initNavbar === "function") initNavbar();
+
+                if (typeof initLanguage === "function") {
+                  initLanguage();
+                  const savedLang = localStorage.getItem("selectedLang");
+                  if (savedLang) {
+                    const currentLangEl =
+                      document.getElementById("currentLang");
+                    if (currentLangEl) currentLangEl.innerText = savedLang;
+                  }
+                }
+              }
+            }
+          })
+          .catch((err) => console.error("Gagal memuat komponen:", err));
+      }
+
+      loadComponent("nav-placeholder", "../components/navbar.html");
+      loadComponent("footer-placeholder", "../components/footer.html");
+    </script>
+  </body>
+</html>
